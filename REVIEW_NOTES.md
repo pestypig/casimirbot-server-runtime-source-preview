@@ -1,0 +1,5 @@
+# Private boundary notes
+
+The parent selection and static-import/credential-name partitions are documented in the canonical private source-review evidence. These 179 source files are not independently buildable: the prior AST pass found 676 unresolved relative imports outside the parent selection and 327 bare imports. A bounded content sweep found no home path, email, cloud-bucket literal, PEM private-key marker, URL userinfo, or credential-named URL query parameter. `NEURO_LOOP_BASELINE_KEY` names a persisted baseline record key, while computed environment reads in `server/energy-pipeline.ts` use fixed physics configuration names at their call sites. This is static triage, not complete credential or runtime-safety proof.
+
+The selected code includes GR/warp, Helix Ask, theory, live-source, and diplomacy modules. Third-party packages, data, scientific references, and other server files are not bundled. Exact first-party rights, copied-content and dependency notices, final scans, publication approval, and Public readback remain pending. No physical viability, accepted proof, or certified gate result follows from source visibility.

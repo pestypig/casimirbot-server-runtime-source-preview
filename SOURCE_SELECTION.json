@@ -1,0 +1,1297 @@
+{
+  "schema": "casimirbot.public_source_review.server_runtime_credential_name_held_selection.v1",
+  "status": "private_exploration_unlicensed",
+  "sourceCommit": "0bc3c8fe23f24e8f5b72d4a40140b7b16a2146e3",
+  "parentSelection": "server-remainder-runtime-source-selection.json",
+  "parentSelectionSha256": "855619b6a96127b16bb246de9dfd20781b24d56c816ebafb8056be4c6ff68117",
+  "selectionRule": "Hold ten runtime authority prefixes, nine remaining credential-name paths, and every selected file with a static relative import into a held file. This is a provisional risk partition, not a publication clearance.",
+  "counts": {
+    "parent": 550,
+    "directHeld": 224,
+    "credentialNameHeld": 9,
+    "closureHeld": 138,
+    "retained": 179,
+    "parseErrors": 0,
+    "iterations": 6
+  },
+  "sourceFiles": 179,
+  "sourceBytes": 5270442,
+  "heldDirectPrefixes": [
+    "server/auth/",
+    "server/routes/",
+    "server/mcp/",
+    "server/services/helix-account/",
+    "server/services/environment-connectors/",
+    "server/services/helix-agent-api/",
+    "server/services/local-supervisor/",
+    "server/services/shared-live-room-control/",
+    "server/services/discord/",
+    "server/services/brokerage/"
+  ],
+  "heldCredentialNamePaths": [
+    "server/helix-core.ts",
+    "server/services/helix-ask/artifact-query-index.ts",
+    "server/services/helix-ask/debug/capability-lane-debug-export.ts",
+    "server/services/helix-ask/realtime-session/adapter.ts",
+    "server/services/helix-ask/realtime-session/config.ts",
+    "server/services/helix-ask/realtime-session/route-boundary.ts",
+    "server/services/helix-ask/realtime-session/sdp-transport.ts",
+    "server/services/helix-ask/runtime/agent-continuation-state.ts",
+    "server/skills/physics.warp.ask.ts"
+  ],
+  "files": [
+    {
+      "path": "server/control/sectorControlPreflight.ts",
+      "sha256": "537c778c0501fa24d222a9fa7a44ed58e563a82dc527e533cd4000eebbc8febe",
+      "bytes": 4372,
+      "gitBlob": "b33431f71884556f7806a8e42239ff83e7755cfd",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/curvature-brick.ts",
+      "sha256": "bf8da29c003331f62d2116c2e6ac9cc5f1eccff37e9b0a60befc573b24763029",
+      "bytes": 24214,
+      "gitBlob": "d4e165e041c2b5a07e268379ab915a7cbdd34f04",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/energy-pipeline.ts",
+      "sha256": "e03bc099c20978bd89fdf017e944728cc184e82a2d512df1e91ee96691a3bdd0",
+      "bytes": 895129,
+      "gitBlob": "578e133b96e1c75b9979c338f203b3eef7dbc226",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr-evolve-brick.ts",
+      "sha256": "9afa940fd6d8c4ba7417eb9b944476727f7feb3c19e0db09e9b4d5dd63980a95",
+      "bytes": 56596,
+      "gitBlob": "413e2353eee77357686c5bd70434eb5bf2964eb3",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr-initial-brick.ts",
+      "sha256": "458d03424dc998f8e790b5a0362d3cc75f08b3e644d3d71b010c412bbe2d38af",
+      "bytes": 4237,
+      "gitBlob": "e59cbdaa279f0fe2d892ecbb0309233abeab970d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/constraint-evaluator.ts",
+      "sha256": "d4bc5fc76baf42a64eef9596872dcbb79f7fece64bb9e110125839da42aba065",
+      "bytes": 10885,
+      "gitBlob": "e036b29c14c4f79390f659ca6c67f5318e692c57",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/evolution.ts",
+      "sha256": "07c989d56e5c59c80346382814903f9d73dbf88758454fa266e097dd43ae0610",
+      "bytes": 14798,
+      "gitBlob": "9938af5973cadd71226fb0a73b91db98a84d88e4",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/evolution/brick.ts",
+      "sha256": "baaadcb8cac5d897b1a9c02f1fabc9413dc307af17ee78fe1e9535b8ced436ad",
+      "bytes": 45561,
+      "gitBlob": "8281f08c556b1847c49c2b33cf19288f716d18e2",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/evolution/index.js",
+      "sha256": "64e55237cb4410e17d968cd08975566059f27638ebb0b86048031b987ba251c4",
+      "bytes": 28,
+      "gitBlob": "a88bebe96f470afc5d96b8f77de3243af90ac59e",
+      "class": "other-runtime"
+    },
+    {
+      "path": "server/gr/evolution/index.ts",
+      "sha256": "2fe39e00c7e6d9e531f761dc67e9941896940b9cd43db157ffb12cd9d01c0be8",
+      "bytes": 1433,
+      "gitBlob": "be6670699a13452c64038352382733eaba78a7ce",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/evolution/initial-data.ts",
+      "sha256": "62d641d5e1f353ca3caff1b9508f5aea3982189257b3913890a2156cc243c56c",
+      "bytes": 7765,
+      "gitBlob": "3c7f7288780756e3621775c34875d9d88017ed64",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/evolution/solver.ts",
+      "sha256": "c58bc9563187dfacbd315009aa091bfa15fbc78bc7c169716b71b12218ea24f1",
+      "bytes": 5634,
+      "gitBlob": "5712c9eb413bb6f5d94ec3b4aa370b924ead3a7d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/evolution/stress-energy.ts",
+      "sha256": "01b6409934ca7ac66fecbb4473718cc0c4f100751c06fdc060ab0d7ded48de74",
+      "bytes": 9372,
+      "gitBlob": "698c05f3840d5b6fce4a50799c26ba29d4b8222e",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-agent-loop.ts",
+      "sha256": "9a44e9716a867eb15d9aa23195309674c22d23a61892a87c2f7108b04eb5f247",
+      "bytes": 22476,
+      "gitBlob": "4197073dab66c48223cbd8e7c995a48948175fb8",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-assistant-adapter.ts",
+      "sha256": "adbe4f50ec3355e215ed7151ef339bec345b58a25f731eb0d9e5ac67e550e4be",
+      "bytes": 9483,
+      "gitBlob": "be6986f85790276c9bff7e6b419ef084173bd4b9",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-constraint-network.ts",
+      "sha256": "b585b572cd7322de7d53b36cfa52763ca5e443e05e386685ec2854ba05649ee5",
+      "bytes": 6479,
+      "gitBlob": "917cc36264e97b5c08c52bff4b02bc987cf84df3",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-constraint-policy.ts",
+      "sha256": "1e67bf2cf4d64d5e54328d1647e455b0da4e8f67766809c62c63bc6f12ce3fbc",
+      "bytes": 2436,
+      "gitBlob": "b679a6dac59dcb9fdd32f24a7cf30480475f6446",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-evaluation.ts",
+      "sha256": "8d6c3cb0398ab79fc7feca617b91da7d7e9841cac55136975a06a6b57692a92a",
+      "bytes": 13256,
+      "gitBlob": "b893b515726aa438bd60872a11aa1e3d47cb9ec6",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-os-payload.ts",
+      "sha256": "06d1fdeb607406df189b7d10d9a0b1ef39703fd13c692f5651f1b3a792a105b1",
+      "bytes": 10257,
+      "gitBlob": "bdddb04d741cc2f3e83670825647522c304f0e8b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-worker-bootstrap.mjs",
+      "sha256": "2692896c5accc94e6e9a2da35e9aa98948ef1d65d713a007f176b29e71bc8de7",
+      "bytes": 25,
+      "gitBlob": "53d6a60e8b3d59c60b0246c8bf60af919602a800",
+      "class": "other-runtime"
+    },
+    {
+      "path": "server/gr/gr-worker-client.ts",
+      "sha256": "5a954b623aec81bb6c1421d21e8dde1592a08bdd54be4a0babc1fc15c3cfc654",
+      "bytes": 4566,
+      "gitBlob": "82f8732a9d1504166ed9574023133fd9a3d442b5",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-worker-types.ts",
+      "sha256": "a99c9eb9aaf9fa28e29ee92a236acddf8bab04815a10d6233f2612f342141757",
+      "bytes": 1049,
+      "gitBlob": "7bead3a03f7b2de365079b054cae6c778cbfbc77",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/gr/gr-worker.ts",
+      "sha256": "634d822340a5b5c82df119f8857afb636bfa39dc03272d759d5a8bd19c1a49db",
+      "bytes": 1781,
+      "gitBlob": "078d3476bd4224bb9c9f4b5d7312ee0b704f598a",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/helix-proof-pack.ts",
+      "sha256": "62b26b7d9749952216413512bdad7d48e900c58d7465731f8068a350c9184bec",
+      "bytes": 83791,
+      "gitBlob": "a3bd1f15d475b186e58899d33f81cee012d4b91f",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/lapse-brick.ts",
+      "sha256": "6936f0df1c992657661c357af439c942237fdd6f7059598caae0c792edb93c6d",
+      "bytes": 11003,
+      "gitBlob": "1fbdaeaebe1d622bae0b36e5e2d08f0276228044",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/modules/module-loader.ts",
+      "sha256": "dc2c7b8c02b09448b2bac2078f3b7911bef038326ac7e5ed3f9ef07fcd63e646",
+      "bytes": 966,
+      "gitBlob": "2f3f3f274f26aee8b4a6d33e280c7ba2d1e59edc",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/modules/qi/qi-controller.ts",
+      "sha256": "6c01b19f95cb421f9fb1e768c0cbe245d453947b9786eee69da0cf1fad8f3dc9",
+      "bytes": 32994,
+      "gitBlob": "f7a0860354389a4e9ef584b4eedfe30c650feb11",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/neuro/index.ts",
+      "sha256": "b3743e4507eefbc0ed4aa17474f97c6d5c07ebf9b6093c0fa73af3c3b7713bd2",
+      "bytes": 412,
+      "gitBlob": "4f81f5a16c82e25a033e288d89e0b8ab98c1a429",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/neuro/kernel/neurostate-loop.ts",
+      "sha256": "8c5d69d2f5eb75d21b07dd69a11729e210448af2c7088d85b7d625a9f8cbafd2",
+      "bytes": 18956,
+      "gitBlob": "1759615b358a4b277b25773c77ee0cb120bcbfbe",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/neuro/loop-controller.ts",
+      "sha256": "2e4c693679666ac5a899afa8200cf0611494e09e604e7fd3005e49ceaa5e3f33",
+      "bytes": 22226,
+      "gitBlob": "c0248b3c37804c300a585d3089d0c5f0efcfab72",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/adapter/run.ts",
+      "sha256": "d9e0ac57af0ad5861331056e27398a13aa46322cb3eca68be4c46166d17d4413",
+      "bytes": 17664,
+      "gitBlob": "291a180e8e0b7143d308ce61270a172856643dde",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/counterpart-references.ts",
+      "sha256": "711e74736087744a366a14d9e9655d7b3d4f956fc81d5ef24c1c72a5d85c9089",
+      "bytes": 4240,
+      "gitBlob": "1fe32a9c01c58449520e8ee2d5bb666d96968c14",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/dated-negotiating-conditions.ts",
+      "sha256": "3826d3424000d640246ee1b632253cc31ae192f62cb89f725b048cfd1d6a14ee",
+      "bytes": 1669,
+      "gitBlob": "ba12de0ad75934acd6e2c6706d60c1912d80dcc0",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/dated-operating-reports.ts",
+      "sha256": "a1c8dcee49140ec190df8d168f784d8724bf92490a901d47ddd9c7a709b9cace",
+      "bytes": 2041,
+      "gitBlob": "612a28998cd55a676daf155b1e1aec5f1c148ffd",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/designated-wetlands.ts",
+      "sha256": "594add38eaddd61b3368d6065edfa11619006a59ec00c2c4503a3d65a79a5f58",
+      "bytes": 1595,
+      "gitBlob": "61a1f103989dfd1a2ff21cdc7ec3a06ec415e238",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/family-context.ts",
+      "sha256": "5043d9704a9aa11f97ab5955bbbd425d35cd89353eeb284aac3ca6556adb4899",
+      "bytes": 1129,
+      "gitBlob": "6f0287d507eb7e400644e63cb3e8affa82500223",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/humanitarian-context.ts",
+      "sha256": "d230c4698445f491110f7ec7e34eaf9e6f6a490505e1806b9e91ffb33146d711",
+      "bytes": 1113,
+      "gitBlob": "792252187e7d744ef252e5d02b855088f3ced42e",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/issue-comparison.ts",
+      "sha256": "7b4cfbe1e66d2b6d338c994ee19aac55365d607ce94659814df6f70916047809",
+      "bytes": 57720,
+      "gitBlob": "f6a48d74e754d8ae04f3e563a68d0d64e9f4bb82",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/mapped-option-reasoning-brief.ts",
+      "sha256": "0d665c67ce0ea85176edcff3c7a3f08b34fca50432b1d2650c78298244e76bd8",
+      "bytes": 14536,
+      "gitBlob": "60a80f7a95d9dbdd8c23216c65ee869927771e13",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/mapped-path-option-review.ts",
+      "sha256": "27ff48af43ffa2fabad3d07fd575ced209f10d825d8bfddda7d100734c9c1d49",
+      "bytes": 34937,
+      "gitBlob": "93a89cbb8d212218acb85531e9126954b3436fed",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/pair-glance.ts",
+      "sha256": "570ab737dcf2857998f8a02eccbb1c5b09ec0bfaaba2f4a54693207493e812d6",
+      "bytes": 19270,
+      "gitBlob": "54d9b83e7122dee23198cbb494633b0d2f369963",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/relationship-network.ts",
+      "sha256": "9b5fef148b261a34626b9b543afcb97eda6e2b76895d866e8b6cc4dc57c9c9e7",
+      "bytes": 12930,
+      "gitBlob": "7a96075f32e1bab1ed010a35784603cfb363c66a",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/scenario-comparison.ts",
+      "sha256": "142e67d0a70209cf7d5ce9169ad0cb25dad2b45cb11e4d2f2f7066fe5554eed8",
+      "bytes": 229359,
+      "gitBlob": "0cd39f34c2af446c0893aa3a2bffe396423bbedc",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/scenario-reasoning-brief.ts",
+      "sha256": "3532f914f227e6324fe0555b14f41b82b438a77695e82c7cee0c4f86a4b1c413",
+      "bytes": 28251,
+      "gitBlob": "816a8aa8d53da65bb7ba784cfa2e4cfbb9e8fb27",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/third-party-operating-context.ts",
+      "sha256": "11df6f42788b7c93008ed38c0d782e31ed5f3ed863efa3b7f4033c3e29398381",
+      "bytes": 1349,
+      "gitBlob": "d2762c77847a9e950740845b30153aedf24001c5",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-evidence.ts",
+      "sha256": "3330ca2f7622239d80392d100e7f84e8d6081509cda9e239fc61694284a80cd8",
+      "bytes": 63936,
+      "gitBlob": "c2e1d029437b5136f8e6f324de53679016a83851",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-pair-review-leads.ts",
+      "sha256": "7e61991e59462ba4cd3540fc1ce9a7cd661ca901475c08e34e8cf2f280461cb6",
+      "bytes": 7604,
+      "gitBlob": "592d9efad05dfd8837f77aa5c333e7d5b0ad4fa3",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-pair-topic-passages.ts",
+      "sha256": "168e3c49b742a5f0b3e2dafc137368a38f8b7efc91ac9d514e0d720c948c132d",
+      "bytes": 13380,
+      "gitBlob": "7cbcd3e81414a84a8e0d1b00e3ed01129ad04e4a",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-provisional-segment.ts",
+      "sha256": "0b3fe941e9c20682e88be255d88ba244e14f6ed3acaa8e2dc99d55d5f5294757",
+      "bytes": 8370,
+      "gitBlob": "659e9e182a8538685b22c24fc4b20526a34dd095",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-provisional-topic-discovery.ts",
+      "sha256": "f5031831994601fde33c46ffac02c189a21ae823280cf416bd0e8b9fbe9f1afd",
+      "bytes": 6283,
+      "gitBlob": "64b4e9585207f0b4c664b11bba3f5e4fc58a3c5d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-submitted-page-leads.ts",
+      "sha256": "55d74ce513ac85ebe72334ea12270f7d3572282aae5a8f07359b7dc633119a74",
+      "bytes": 9199,
+      "gitBlob": "18b90e0c9371349765b5c9cab7d02254a8a1e704",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-submitted-page.ts",
+      "sha256": "95cbc6038158f26342f4ace7485dbce375c42d208a4ca4733ae3f033bae0c4f5",
+      "bytes": 17331,
+      "gitBlob": "52b6807a7bd0ba6c37ad8e072c2b2c063e3dd835",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-batch-evidence.ts",
+      "sha256": "c4e73e16e550e03e894861664cb5fc4379ff30e6322a7c04f93ade3bc36b8d3f",
+      "bytes": 11905,
+      "gitBlob": "b38c9ce6e6feb06d87fdc7b444da19eeb8b15607",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-evidence-plan.ts",
+      "sha256": "b620da8353b7e8dd05297f1fc5f9c5bc9070bde55e2ba1d7b1928e38890d9c02",
+      "bytes": 9426,
+      "gitBlob": "daee29d533ee5f1a45d8d6509a3ae6ea7b6332a4",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-network-topology.ts",
+      "sha256": "50f3d7ecd827ecc1808d8543b17545b354f6ed8f583c53b841945f54ca6e5cc9",
+      "bytes": 19281,
+      "gitBlob": "51b478391f369da254f25eec7db984a625578ba6",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-batch.ts",
+      "sha256": "d8be6be1629e722a56eec202ca993a8257e7e6cb4519717319ddcff3e0b892ce",
+      "bytes": 8609,
+      "gitBlob": "f439261bed877809ec5af9b6bfc80b96f32a70ae",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-ledger.ts",
+      "sha256": "ae09df2b7fadb31579311d9d75a81ae9b24399165f3c0eea4f9fc3c1417f4269",
+      "bytes": 14465,
+      "gitBlob": "c07c670dd04908215367424d3bba794fa09315c0",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-receipt-chain.ts",
+      "sha256": "7ccb4f1568acdfa68e53bf0ad410aa49d358bdc767dc1d226e7a2440ee642785",
+      "bytes": 10322,
+      "gitBlob": "6a87356a4b45558ffddbf49aa195ba78d0143188",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-screen.ts",
+      "sha256": "86c0ad4ecb3b8289723353b8d22f5666f24b829e4b57afcbb31e336da177adf4",
+      "bytes": 16594,
+      "gitBlob": "17a76ba8627169bd48b51494bd3e5a51ed4260f9",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-window-evidence.ts",
+      "sha256": "4eabd22a62a09659c7c66f3596ddbe8b00d3e49ac5aa10963eaccbdbdb80b785",
+      "bytes": 3174,
+      "gitBlob": "068bcab0fe8080488973bf30929926f4fadcfc5e",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/diplomatic-corridor-packet.ts",
+      "sha256": "2d84699338df458ecc57e430433d6cb1c159f04f5e9781b368e8dbacd78dd112",
+      "bytes": 44223,
+      "gitBlob": "4f7dca71cc4b8b0bb43777b1b2bafc9b57f2c01f",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/index.ts",
+      "sha256": "b8717258ce8c14706b24dc5e89daabbdb33c742b0f4b860ee21e0f3184f3ad96",
+      "bytes": 6328,
+      "gitBlob": "bbcabbc127c4e3a85c94fa16f42f6ad2c01f4b90",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/mapped-network-route-options.ts",
+      "sha256": "9e666a89bf90f980fc152b9ea008cb9b3456c0e9f5e4e3fd3dfaab0354857eb4",
+      "bytes": 32112,
+      "gitBlob": "e20c277fe39fdf68b95c63d0fd4d37cee1f1886c",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-country-candidates.ts",
+      "sha256": "ab649e1165cc39c6193d19b1c00ee8c960ac165d9d2ab1762562b9eb4b1d950c",
+      "bytes": 4360,
+      "gitBlob": "5cdba6b5471a23cb73daa0da9aeb72fa72a3953a",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-country-geometry.ts",
+      "sha256": "86af4902bba6672964ee59cbdabc123cba17803fc6fb5f92183e4ae7619598ea",
+      "bytes": 11866,
+      "gitBlob": "4409b5b99b842eb8fe46813f52eb5a337c3efd8b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-hydrography.ts",
+      "sha256": "20d19edaf4421623b9e516d734e9cc2036251424140c74ae1e9ca2216eb3f740",
+      "bytes": 9259,
+      "gitBlob": "82f66f9cee2a87db37130eb672e3168c1a4fe35c",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-lakes.ts",
+      "sha256": "a92321819482b3a3b5d12860155705cf93f7be5423177e3a6cf246a1009be48a",
+      "bytes": 6107,
+      "gitBlob": "bb7c4a04085777a1f94cc818e12001830787018e",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/proposed-corridor-screen.ts",
+      "sha256": "e6026059d487329eeefbf5b4447933f3c53dc71c055d1d5544010dd323d6ab90",
+      "bytes": 45058,
+      "gitBlob": "dbff127f73aee5531b5391696bec729a5a34e46d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/ramsar-wetland-boundary-screen.ts",
+      "sha256": "63fd871e86aebcd02954a068baa5019192f7ea6e1dfad2db13cb55a38a8bd645",
+      "bytes": 9719,
+      "gitBlob": "9595f88e6b5bcb0a0e9eb0c45198682f428d5515",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/route-hydrography-review.ts",
+      "sha256": "6276a2a5cf6626006557093dc2aa41177f736cc8965438e36833b23518139ece",
+      "bytes": 5618,
+      "gitBlob": "11de6e6b1290ed055ecaac7f45c27771bc38620c",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/civilization-live-sources/route-lake-review.ts",
+      "sha256": "79aa4be4e4acaa3ffe47c761995914ffe8efa48240d1a484a21c080d12595837",
+      "bytes": 5983,
+      "gitBlob": "929a9f47838badb1984de74dcaff19ef646ab499",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/collapse-benchmark.ts",
+      "sha256": "2e92fba8001629d8d3f3e35b2c5d94092e2512ba68eb89fd1a9a892efa4e7ff4",
+      "bytes": 20838,
+      "gitBlob": "4d6655ba160587de0ab3d1fbf048aff4ccf3f968",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/debate/orchestrator.ts",
+      "sha256": "b63272146b8b4a90cc4f5de156cd477c78af53358798b3bff0a03eb2607b60d0",
+      "bytes": 48913,
+      "gitBlob": "5fbae52207b46e9055a7366755812317f6cabb40",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/debate/prompts.ts",
+      "sha256": "6091854d0e3d83ea1906277b5656142dcd92306a1f8327413cddc72217882dec",
+      "bytes": 6248,
+      "gitBlob": "840c1c155746d849b1e95993b35b9cc90a36a136",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/debate/star-bridge.ts",
+      "sha256": "43d5be18eb15962e4948a7c70cec398447ab072f1d38b10a10486096a5acea05",
+      "bytes": 3654,
+      "gitBlob": "9394f153b87ead472520546b5ea77358fc03f11e",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/debate/telemetry-store.ts",
+      "sha256": "7feb5c484e4fdc20eda9bd7fd02e85b81f356a27bb0b6fbbe000172e981ccb74",
+      "bytes": 3098,
+      "gitBlob": "9a1958fa576268013c0b05480787494e6bb2f36d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/debate/types.ts",
+      "sha256": "f6759a24a7ffb902771c1d71923d6dba81cdf863ac39ad567817f3b0225c07c4",
+      "bytes": 1045,
+      "gitBlob": "2abe23d5100d9fbd29272c89d367349c0d91096f",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/debate/warpPromptHelpers.ts",
+      "sha256": "f056d689a3572c194cb6403ab0af9be756e9b35efaa74fc391c1c7289eed8150",
+      "bytes": 9927,
+      "gitBlob": "eb620f2882a99f9b98ca4e68540e63cecb4a5e93",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/dp-adapter-build.ts",
+      "sha256": "f3b863698489d3a5b3476913945c6377c9faa5cab05e541fb46700a3a7d131e8",
+      "bytes": 12170,
+      "gitBlob": "3d2987e5b24cce1d0216e085a47e540a0c7b5014",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/dp-adapters.ts",
+      "sha256": "4bf358ef102a97f5532be2450dc330c9b9088660685897c58dfe87d5dabf6e0f",
+      "bytes": 11452,
+      "gitBlob": "12829d050050a0a68a064737909925da1a5c5118",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/dp-planner.ts",
+      "sha256": "86debc81d88a945f4e8d25bd2d6bbd98b38f36b4e624122d301089f896763bb8",
+      "bytes": 6739,
+      "gitBlob": "b27196f9fbf3f09abd2a8fcaaf633dbd565c9642",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/active-context-tool-requests.ts",
+      "sha256": "57324bbebd42e4e641148d312f9a43bfcce956ad247882588c2057f2ea0cb4c6",
+      "bytes": 69845,
+      "gitBlob": "5022d72f38f99a323a72ecba62019612e8234b3d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/brokerage-environment-tool-requests.ts",
+      "sha256": "59eb8451ccab7b426156b5e1d27bebc3b371705ffd6b4d2a7f7abdf45ffb4894",
+      "bytes": 1450,
+      "gitBlob": "8cb9387430d82315ed0b2758f916005000dae54a",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/codex-native/model-policy.ts",
+      "sha256": "d2e0f9db575f777b203c1b9ab0b728d9bd55280af2135b8800cb428187c14a16",
+      "bytes": 2374,
+      "gitBlob": "2c75c4be29192d9833c0d49a2f5d019e55c1a3b6",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/explicit-tool-requests.ts",
+      "sha256": "c5793375513a014dfb593c86dc25e4d2fafb56994a5c10d4405dccf453fb58ce",
+      "bytes": 10616,
+      "gitBlob": "f6b970bb49bdd589f25454b05836cb777d07fdaf",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/gateway-request-dedupe.ts",
+      "sha256": "89a68d25f97050d269a97f2b05e089016ca85f1a630e8a307b56f632a771e319",
+      "bytes": 2111,
+      "gitBlob": "8acde289514948b625c7d50ad3bbe87e3fd8435b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/live-pipeline-control-tool-requests.ts",
+      "sha256": "364e1f3fc5d3203b9e7021558976fbcb5e82625040052deb7d79e334a4c36846",
+      "bytes": 3233,
+      "gitBlob": "85ab40d30118c07933bc68b77703eb232358e92a",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/prompt-named-tool-requests.ts",
+      "sha256": "8e330f13940fc96122f7d86c53cde7ad98a2cf682d0b7eb750eea661016cfed0",
+      "bytes": 103046,
+      "gitBlob": "079cb78d7fab6477d5e051b55397dfe6adc030ad",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/api-parity-probe.ts",
+      "sha256": "6662deb3f09f4807fee456c313a3f67f25a90a808264526de3b999a5c38c5606",
+      "bytes": 66826,
+      "gitBlob": "4d030283f855a67fd50d72c4ad9c4462b80d9ba2",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/ask-source-target-arbitrator.ts",
+      "sha256": "3c3eb80228c776e714e0d0a559093c8e57682689458c1365782aeb0b05c2e749",
+      "bytes": 111085,
+      "gitBlob": "451b26acbd490752982dce650ff5982b31bf8b59",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/ask-turn-solver-trace.ts",
+      "sha256": "2349b2aa0d737e45d3e5614e8b477c193865f0e45cb0cd4de5f3bc5aaedfb29f",
+      "bytes": 1630,
+      "gitBlob": "086bf2b263ed0ea08912abbc7ec47d988a64fecb",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/ask-turn-solver.ts",
+      "sha256": "29ef063bb50326e04158d2d3ae79536b2510248d87713b71f76a079803161c9d",
+      "bytes": 105213,
+      "gitBlob": "ed46a3e1cf3aa1feb658ab09cdfedb0c0486dfaf",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/canonical-terminal-projection-verifier.ts",
+      "sha256": "083d99155c0369ad5459cdf793d201deafbe22c73beb6f1248dc25997f4da7bc",
+      "bytes": 7803,
+      "gitBlob": "5a31ecb71e5c781865a783234bcf3af771886544",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/capability-contract-arbitration.ts",
+      "sha256": "092934154c0b9659a7a9c8a5df074e4d001954758879389cda2530c6ecb13baa",
+      "bytes": 25272,
+      "gitBlob": "953b54b780ffe7956b6382acc9186ea13948e3af",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/capability-itinerary.ts",
+      "sha256": "d45fcc0e9e4ee1598be86f2c9c88f3334f17b2225c8b03f440703c26f1a74f0a",
+      "bytes": 35658,
+      "gitBlob": "1f1f4096e58943a047722beffcc8216949821b53",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/capability-planner.ts",
+      "sha256": "716302a97c2d8106a5f05fe920274d3ff206fd78c176068c01328e64ce8d18c9",
+      "bytes": 47953,
+      "gitBlob": "762162297f05fc5d16769d26af13d07431d6cd5b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/committed-ask-route.ts",
+      "sha256": "bdd033278ebebaee93a1dbf798075c05d68d8b997d037003666739d2ed8c7d64",
+      "bytes": 82305,
+      "gitBlob": "545f4beaf11a2620a8f62dd64f9b7dd2e093a02b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/compound-capability-contract.ts",
+      "sha256": "2fe2ab155ff2a45f3642eed503e99e1e8fe9eaa1161932b6cc834957f5f0b0f7",
+      "bytes": 66598,
+      "gitBlob": "6646262a2f63e3fcc7e66c1ee3fca1ac8b9e954c",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/evidence-reentry-gate.ts",
+      "sha256": "a073bd442dd912c95c8ddd1a967630b6f5ddc3e50f260f2245b21c462475884e",
+      "bytes": 42970,
+      "gitBlob": "770f90a7260f8114ebf12e7273787e24114ee9fc",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/evidence-target-arbitration.ts",
+      "sha256": "b6f64716475037948770b17202a21a5ea935d0a51d2a14838a2c33e4f6753c6b",
+      "bytes": 38003,
+      "gitBlob": "2dace9ea0e10c3d5e5c8183808b6c7dc56c57a76",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/explicit-capability-contract.ts",
+      "sha256": "a118e6b9367ddb26cd743e1b8c3bb598960c4910534d42052d405a4c5e93b2cb",
+      "bytes": 182040,
+      "gitBlob": "b84665653db3a0c475986ede8ad300ffa2780806",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/external-turn-projection.ts",
+      "sha256": "bc02b91ad8b2ab30d0a34686132a425ebe33d0d75d48231231ff66624dc34669",
+      "bytes": 8839,
+      "gitBlob": "3d80ca76d9168eb0a732bbc2c745afeb711d9c91",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/final-answer-draft-terminal-materializer.ts",
+      "sha256": "4bcc46a301ae210b27bd225c50475c2bbbfec960b4f789dc4b4e1932f12a4d17",
+      "bytes": 75081,
+      "gitBlob": "77f7ac2da928ef6973dc5b4b08011543b2f9710b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/internet-search-intent.ts",
+      "sha256": "53578584dca206a801708cfd36412942fe12ea177808aa2059ba00b5a6cb28ad",
+      "bytes": 27294,
+      "gitBlob": "6d8b3184710d81446f3291ba398a83e375b7edea",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/live-pipeline-control-terminal.ts",
+      "sha256": "5e1fd3f607da129b864d16d74a8ce3a4071b4d79ef6900451f6e1ebf66a36a48",
+      "bytes": 10308,
+      "gitBlob": "bde0803ba102e3c49577d5fbfe0f1697823eb8e2",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-context-policy.ts",
+      "sha256": "604f0cc2098ad978550613c17950a5d983093ccf6bd9f2a3f728113759a1c7b2",
+      "bytes": 3783,
+      "gitBlob": "2e65fb399673231e77b3dc522e4f2d5a340701eb",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-executor.ts",
+      "sha256": "bd3f379b7c0b9ada6ae26605ffe7b0dd82d4c9520cd9a64d4ff21cfc190f637b",
+      "bytes": 7681,
+      "gitBlob": "6f4daec15e6f9cfd0eebf41e41db08845cac9935",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-final-draft.ts",
+      "sha256": "dd616273b45e49d50fdd50d9d0b4aab325de61292b8a2e7a7969285b653f47f0",
+      "bytes": 1324,
+      "gitBlob": "103ec5e687b183fc25be6ae2cf134d1127f293ec",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-packet.ts",
+      "sha256": "6b6d16d02f75c93d44789415e644bd7cfa8715d2d51a81ccf1211b49d0a22a98",
+      "bytes": 7123,
+      "gitBlob": "34e0d6a334201a06e6c1d37cefe7ca92e0220d6f",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-tool-continuation.ts",
+      "sha256": "301d82ee9e4c1f7a164647615c0b7bcf4d09a470b73f437db1c1808b52d77a5d",
+      "bytes": 8859,
+      "gitBlob": "7ae89984a3390bfa070c3530431364041f05bab5",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/nhm2-block-grounding.ts",
+      "sha256": "0bb026dd101ea155bcdd446186997b5a8a05785c56e871dd87f6c460a515764d",
+      "bytes": 11315,
+      "gitBlob": "474bce8dbfecad83e95a671fea900bc3fdb9804e",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/operational-constraints.ts",
+      "sha256": "63960cde097ae8d0527c09894c054f5b7fb0ff92ef19561a5027c7e894e97f79",
+      "bytes": 15255,
+      "gitBlob": "7be66c52f70abefbac4540f09dc5b71a36b16aa3",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/route-authority-audit.ts",
+      "sha256": "8601652c8c33e6186c02b38aa7bdcf990a5ebf4b85f653a41cc9e2b6298998f2",
+      "bytes": 14762,
+      "gitBlob": "6061e21c3894bc7cbe26d0f865b9a290da288095",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/route-product-contract.ts",
+      "sha256": "9edfb429a8d82622770a399de67f06a24dc85d7cea800ceff096721422fc635e",
+      "bytes": 56941,
+      "gitBlob": "b40b92edb6bece330d84bf7857f7792c8b2b3e9b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/runtime-authority-contract.ts",
+      "sha256": "1141f110153156577a3487da21bffccec7f59efc8be45574cc6fc677b98b2849",
+      "bytes": 112402,
+      "gitBlob": "eca590b74436df64086405a5c37451d0dba6808c",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/runtime/external-capability-policy.ts",
+      "sha256": "8943522c8b1b8376435b629b6b3e53099a809b0f0fb971d5acd132e50ef272b9",
+      "bytes": 3549,
+      "gitBlob": "5bce78a448ac04da734dc4499a9c4d888aadfd72",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/runtime/solver-payload-refresh.ts",
+      "sha256": "573cf26e7f9d502ad28df136facc46b0489ff20a453d139066b163a597313bcb",
+      "bytes": 7659,
+      "gitBlob": "5bd29b6bf81f2d7607a9cbd553b823af33c1fc5c",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/runtime/turn-lifecycle-differential-audit.ts",
+      "sha256": "76429486dbc3ee5965ec8ff6c9464c01bcb606351a924d74b23f819207ea8b1b",
+      "bytes": 44776,
+      "gitBlob": "613e5b16438d332f770e12d6bbaf4b26510897b8",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/runtime/typed-failure-lifecycle-reconciliation.ts",
+      "sha256": "91c81ee50e7017a4be15b38656ed6c19338fd63559f354d5721568a87426594d",
+      "bytes": 25118,
+      "gitBlob": "f1bad0b3ca41911e16a6b2d9c8d56b6f626fc467",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/shared-room-ask-session.ts",
+      "sha256": "c35e9b19ee8d2faefe17587d5914ba79ba61d84c85afaf3d16148095d9c82ce0",
+      "bytes": 2907,
+      "gitBlob": "a8f285f885d952f75e9f580d2863496bea4b0a96",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/solver-continuation.ts",
+      "sha256": "5d27c4a5cc1a73524c364e0541dbd132b66d3423198adb7866a4bc8b104c758c",
+      "bytes": 12040,
+      "gitBlob": "56164381c88f02667d2ff068b0a85e21d872219b",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/solver-controller-decision.ts",
+      "sha256": "327082b57f5d4c0e155223a4091b44e8d9dcb984fb91cce4687c284625800dc9",
+      "bytes": 76719,
+      "gitBlob": "8518e23e41876f221903ddb17c210ababd8a89ca",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/terminal-answer-envelope.ts",
+      "sha256": "78199ab1f30bbe65ec4f9aa28f79495be86aa2fa08c5ea756fc48bcb31415e43",
+      "bytes": 92364,
+      "gitBlob": "c5ee1c8f163d66075d9d60e09c6e09064fde0519",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/terminal-authority-enforcer.ts",
+      "sha256": "f5c7d6a7fa73b0cc1aaf9f6172c709fac516d1634d9d5eb33817a26247974e09",
+      "bytes": 4351,
+      "gitBlob": "778bd0550aebf5b8a5f6ec022cfba153d6566dca",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/terminal-equivalence-harness.ts",
+      "sha256": "4c7d54349c4065e4870267bfc2dcec2ef7a669e37e75ea82bd4616d1c762b9e8",
+      "bytes": 14585,
+      "gitBlob": "781012ca453995960c8974127f0e16fc3b523b65",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/theory-context-reflection-tool.ts",
+      "sha256": "8558d217eb3fa8ab82ef6453c87c4ee5576fa25cd73142bcacd03be0a0d5467c",
+      "bytes": 3378,
+      "gitBlob": "1b51b62e9eb8fae34a4123c40309c06a01fef2fb",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/theory-experiment-procedure-intent.ts",
+      "sha256": "9561e129ed72c492dcfe44517b63ae4ab4c82001d5aa870f60d42751aa252dc3",
+      "bytes": 10892,
+      "gitBlob": "f8f79c6ef9d2363921fd7ed734ed0ab63c7283ac",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/theory-frontier-vector-field-tool.ts",
+      "sha256": "f65e6ce0f7580c66a9f470f4030b267c59082017e29a7b19b837b25238c324c9",
+      "bytes": 1319,
+      "gitBlob": "464e873ef45cafa206b89d22de8b7594cde09523",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/tool-call-admission.ts",
+      "sha256": "a9a5537a4b4afefbded72c2feafae1bcbae7915dbb328dbf06125534091b41f5",
+      "bytes": 58567,
+      "gitBlob": "31811929a20a94935d4ac71e0afce4ba4e4a2efc",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/helix-ask/tool-lifecycle-trace.ts",
+      "sha256": "07366aa4ba3169fc23143346a6edc21bf9176e6b0d2d8cfb8c37f8ac6dcf48e1",
+      "bytes": 23878,
+      "gitBlob": "d3563f1a817252083948aebfb1015887d1cde086",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/i18n/interface-translation-jobs.ts",
+      "sha256": "1e8627caac0bd186648ca630834df7e3759c94c113af7423f00ef69a5e2dab89",
+      "bytes": 2505,
+      "gitBlob": "169fe2fd02e32afbd8c604d886df1f3ad3f31651",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/ideology/guidance.ts",
+      "sha256": "d8cf3dd051c3c1f30002975778d4ddbb3c2b834b259e608f314f35d9a4a78b63",
+      "bytes": 2554,
+      "gitBlob": "ac391a7653c5cf588ffac6ad52b2ded34e3f4842",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/observability/gr-agent-loop-store.ts",
+      "sha256": "04f9e629fd7aef0bfba40a1afc82bd808829a249c5d09c4a08ef7a87c192e94e",
+      "bytes": 20128,
+      "gitBlob": "d8b38883a1573eca1d13c1ae522fbdb2bd169acb",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/physics/tokamak-sim.ts",
+      "sha256": "de4a218546ee35e934488e21712e7570a3b3709f982b213899c6d8efe0ddb2a1",
+      "bytes": 5858,
+      "gitBlob": "51a4ae0ef98865231593b92b4162a0365999c0cd",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/planner/chat-b.ts",
+      "sha256": "3efa52e93f1c459aea07386f537985e8aeebe2c6af558300d14488c0a5bab985",
+      "bytes": 176873,
+      "gitBlob": "e76641ed4041313b55d85eb29f2fec15d3de1270",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/planner/why-belongs.ts",
+      "sha256": "18762adf664229c9b102a62543f5c63643eeaee08f507aeef95fae245c6b0171",
+      "bytes": 9773,
+      "gitBlob": "754a09b515f4020cbbdb4184a2a7a917370c94c9",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/public-context/catalog.ts",
+      "sha256": "7259785080fc649760ca484c41aeb7a663db3416bfe23630e02111d6a6aba3bc",
+      "bytes": 10915,
+      "gitBlob": "78a1c95340ff3e8a58384811e319c0399213ccbb",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/public-context/principle-hypotheses.ts",
+      "sha256": "e167f7fae1441f4069bb894f52f457654d94177dbdc125be7e1dad30786064f3",
+      "bytes": 16767,
+      "gitBlob": "88016bb40f051379f6ae1eeeb3d0a4b333cdb3bb",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/public-context/reflections.ts",
+      "sha256": "692f0078ec8e04a2f7a1773c9472ab600b9e854e78afb32ca615fcb38f5abda1",
+      "bytes": 120641,
+      "gitBlob": "9b0f364150f9ef4b974823b004544b3214f9041e",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/public-context/relation-paths.ts",
+      "sha256": "0bd0f46e01bf4df2f53bec0889817b673ae1208993bbedcf70a27bd62301c0d1",
+      "bytes": 9099,
+      "gitBlob": "709b5c6c12f3f5047a32ba9e779fd223f002bdb3",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/scuffem.ts",
+      "sha256": "a0f277b8005bed8d80e48e6394c8ac7c63f9f9e995028623a6cc3dd55a88c44a",
+      "bytes": 19496,
+      "gitBlob": "1c7ecb01e43e5545a411304bdb880bfea3296a95",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/solar-research/package-storage-codec.ts",
+      "sha256": "85c2b55922a122ea898a8c55eb1fe4c491d097b6df8877009feac74bc35b747c",
+      "bytes": 4670,
+      "gitBlob": "43ec63527b227e2e629bddc763aa39e20fde3f40",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/solar-research/profile-package-reader.ts",
+      "sha256": "39179bcae1c81ffa9a8c06249288eb11fa7424147fc5a7a1799c8d6fde0e559a",
+      "bytes": 5631,
+      "gitBlob": "3a73e4b1c301bbec3ef3bd266a17232566616b10",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/solar-research/profile-package-retention.ts",
+      "sha256": "8e41a9c35e973354fe434d04652831bda488e831cc56f2901c47781dce9077b8",
+      "bytes": 3070,
+      "gitBlob": "b57978a1ea04ceac6db3fa36ebbbdba3786989fe",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/target-validation.ts",
+      "sha256": "c8e94fbb5232bd135d82e3ec791a197275a4b42bbb2153dc67e727c2fdf42508",
+      "bytes": 9423,
+      "gitBlob": "66f63a4d9e33ecf6c297d6ce0899fcd414c9a0fc",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/artifact-backed-compound-run.ts",
+      "sha256": "3287ae0d19aa28431610bf01a56623202ee09237a3375f91456cfa19ce2b814c",
+      "bytes": 9378,
+      "gitBlob": "ec35490959e7230159c3cb9f2556136ef3993d05",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-artifact-family-audit-catalog.ts",
+      "sha256": "6cb7755e0d41ac5ab5d51fedef21a8a93fdf80c11d0a821277a80242e6ed646c",
+      "bytes": 11795,
+      "gitBlob": "c8daae21177efafbc67d287423335e91fd97b758",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-execution-registry-bootstrap.v2.ts",
+      "sha256": "3fd3eaa1d1da62ee1f4e341a3473914d1f50322cb3510c001087d688cefc6df8",
+      "bytes": 7281,
+      "gitBlob": "a96cbb5e2aca01bf51c9a8728e5eaeef74adda18",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-runtime-canary-service.ts",
+      "sha256": "b0dfbcf1dc7c641d5ad9fa91b2ff58cb16f8407a07bd40966f819307848c0c51",
+      "bytes": 22351,
+      "gitBlob": "a3911cf666f42b9fd60e0d9fc1c5da8d05056bd0",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verification-execution-catalog.v2.ts",
+      "sha256": "4354b5bad6641125a47ebb6bce6e5cfc8e3de9e7a99a306283afcb06bb65887a",
+      "bytes": 16711,
+      "gitBlob": "11abeb3a7e0600afbe79237ca259b5aad63c2a81",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verification-preparer.ts",
+      "sha256": "afd1dd3983399e5461f7934ccfa24f23afda8b4594f44e7b4824f267f236c4cf",
+      "bytes": 36020,
+      "gitBlob": "ec9a64c747d581d24ff9bd9983a271b32b954734",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verifier-job-service.ts",
+      "sha256": "6c008a68fa41f5c93ccfac8f6e6128ca56d54c0d25d9ee4204a019629de8a49a",
+      "bytes": 23005,
+      "gitBlob": "6df8b66ba7e7595f6aad197a7cfc55df7d530e53",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verifier-job-service.v2.ts",
+      "sha256": "bb6052dc2553227d5a946032b7c673a6b9326a14eb12a37292a5e14a973196f4",
+      "bytes": 35394,
+      "gitBlob": "c4a3e3ab077024f3b35e25bc21d415061dc65494",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-independent-numerical-execution-catalog.ts",
+      "sha256": "b9d424efb49a5fa601b292d66e2c359af9ea59d83554180c7b6ef34c8e33ee58",
+      "bytes": 4980,
+      "gitBlob": "2416c720b9acf5743f9fe179dbd45e27162a65d0",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-independent-numerical-verifier-job-service.ts",
+      "sha256": "13ca8c15dcf37d529a483b58820cbe7cc5eb7207c3a75fbc5c4fff2232f0edf0",
+      "bytes": 38966,
+      "gitBlob": "22c58a042dbd90bcc8bdc9eb4e7a58c138b5d7f4",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-lanyon-advection-diffusion-adapter.ts",
+      "sha256": "e6c5aec0c093589b8bc3b1a38ce9ee203f4babe6bf809ec09b4cbd11532c924f",
+      "bytes": 18688,
+      "gitBlob": "974066e68b1005e13a2da5e80ac2f2d092015f21",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-lanyon-numerical-execution-enrollment-catalog.ts",
+      "sha256": "d8abb6767bb0bf3c2dddc6111fab1ccf487c0c9ffdb548211ce1e65d63b7e0f1",
+      "bytes": 20695,
+      "gitBlob": "1d219762e981204e7dca29a06c144694c2442026",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-spec-benchmark-promotion-service.ts",
+      "sha256": "cf0d6498dd95b99dd0bb71a82ce69a80ad0d774d45b3dd3508d9cea420242b86",
+      "bytes": 2598,
+      "gitBlob": "ac3b3b58ec28320d8bfc565914a28760c4310ed4",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-spec-semantic-snapshot-store.ts",
+      "sha256": "d90f58deb91a0f1d54953239c62bac4a8d4f055792ae2661c626e79dec089378",
+      "bytes": 2483,
+      "gitBlob": "31f12ed1c147085a28f8acc0267745abab5d74ad",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/casimir-theory-execution-server-composition.ts",
+      "sha256": "a2a445e8d0f922ef5959900c8ef4e7ac678e09b0cb9c9be7ac7d3416133cf5f9",
+      "bytes": 5092,
+      "gitBlob": "70c1fe01d77575379e68ee3996c55efefced0f1d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-conformally-flat-needle-connected-noise-full-array-diagnostic.ts",
+      "sha256": "7cab79095a042f8beb6ab1bc885fb9e33695871caed48754530a5a14d3fbe7d9",
+      "bytes": 26122,
+      "gitBlob": "323d85c78ff759a186d3dac2066dbc896ebc1870",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-experiment-ready-theory-closure-evaluator.ts",
+      "sha256": "099b30a9ca0627f733643e232c5ab39258169a1131b3c4a2773e111d4bfe1819",
+      "bytes": 146809,
+      "gitBlob": "df0cf543334ffd43cda60c9e1e6809560e3e2a87",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-approved-toolchain-policy-verifier.ts",
+      "sha256": "756d927d8d29c83783cc81b7710d2e5ad3e62eb801d05932b2ff6fc0a41deb91",
+      "bytes": 25445,
+      "gitBlob": "435490c5f2ea02db574fb9e637d123b3f6812ccd",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-outer-observation-evidence-adapter.ts",
+      "sha256": "8e3bff9eaea29ccb56f72f520377feef26f2bbdbb2d182069741cf227a4bd94c",
+      "bytes": 26651,
+      "gitBlob": "ca4b06262a714a0de7b1c7351a72030759359fa2",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-runtime-executor.ts",
+      "sha256": "dedce4110b17b9e9fe8c2c2547edecf63a88a2190cd40cc867834ed1d4d4664a",
+      "bytes": 55120,
+      "gitBlob": "b20d46baa61408274accec363dcc21d0adf9e664",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-runtime-plan-admission.ts",
+      "sha256": "6060db3c65f85e0960c1164cfe0318fcac52aa6e125aaf13d1d757b331ce04fd",
+      "bytes": 34412,
+      "gitBlob": "f85c6020c68408c4e019f05e924f7d7dc5c7e974",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-semiclassical-v2-metric-demand-producer.ts",
+      "sha256": "c18e709d2cb08a2a5007088053afc0a1d6f1d61e06c1bdb19a1042f049d7890d",
+      "bytes": 22871,
+      "gitBlob": "d7970aa87e236341245d3fa5af67e93e6dcb5ace",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/nhm2-theory-component-mcp.ts",
+      "sha256": "d04db7b617a93d5b8bfc31a90624f50ee476715e8c7c8e99c05e56bdf780f61a",
+      "bytes": 9888,
+      "gitBlob": "8aac4df1eddce7e38f269c0ade03e9bc7fd6c065",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/runtime-adapters/gr-nhm2-runtime-adapter.ts",
+      "sha256": "11df79a3ba73564fc6611db4559dcad98b7f28dbedc2a48e4cdb97e3920ca60f",
+      "bytes": 33211,
+      "gitBlob": "17c26806ff18fed39427eb0dba92067140083f82",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/runtime-tool-confirmation-postgres-replay-ledger.ts",
+      "sha256": "1c815d826a5c1458a64ff5c04fdf7ade7782c7a39d3cf1cbbdf89811eb926e33",
+      "bytes": 4242,
+      "gitBlob": "0baa2c2b83622c81188fb94ed3a5991d67408f0f",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/runtime-tool-confirmation-public-key-verifier.ts",
+      "sha256": "d069da1ea769f01f48397dc2b6f533bf8beb8c4c2c30df0ccff669a2b62b7a50",
+      "bytes": 5358,
+      "gitBlob": "2bcaba95a219e5c3d25c5d3a01fbccc687f6dcd7",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/runtime-tool-confirmation-receipt-verifier.ts",
+      "sha256": "695356d89de8b87151f619b8fb0a67386c5c57b85425afc5d6117a4386dca535",
+      "bytes": 10944,
+      "gitBlob": "351d8127e2112c20c00d6f40e7a6faf21cd0d48f",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/services/theory/ytterbium-clock-proposal-mcp.ts",
+      "sha256": "57e91d94e0b729ab5a7813ec6bfc9e761a094d4dab0e137476d94eb4c4cb49b8",
+      "bytes": 5098,
+      "gitBlob": "89e12aa9b21bef5d169fd1bfef9c1fe991cc2fa6",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/skills/debate.run.ts",
+      "sha256": "6ebb870e1e0b3608dee5043b70383f599f72858ee4d44b388a493522d1b8432d",
+      "bytes": 2938,
+      "gitBlob": "64a4cb9ae5a4a8898afcc2c827c9d36d72aa7181",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/skills/helix-ask.civilization-bounds-roadmap.ts",
+      "sha256": "661cab1ee16a57df903c839267eb11e0a099217ad610ae6553890ad73f78320c",
+      "bytes": 40642,
+      "gitBlob": "44d0d6eeb54b03d8f203f4ffe31ce30d33220eaa",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/skills/physics.gr.assistant.ts",
+      "sha256": "9843871c225a55615a51a29022d5faa960431e1c5ef2fef12506f11a2a1ef7cf",
+      "bytes": 15496,
+      "gitBlob": "5d8f7550e1429556b71dde73ecb27024407967ed",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/skills/physics.gr.grounding.ts",
+      "sha256": "b1c9eb98c4480c3dcaef66d725135c5f422a08496f13e17974571f578b51303b",
+      "bytes": 11216,
+      "gitBlob": "14ada38ba2f20f5d729849c8ecb06e0c11904b3d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/skills/physics.warp.viability.ts",
+      "sha256": "b8c03b589599b32a22397e80f997ae6a98d3049f03b3587eabe0c0bf9551e78e",
+      "bytes": 11537,
+      "gitBlob": "652d7f3002e2bdbb5edecd07315f309a4e60d07d",
+      "class": "import-excluded"
+    },
+    {
+      "path": "server/stress-energy-brick.ts",
+      "sha256": "9d1453a5b5e8f891c1703b532c0d7159c66941bbc2d9af3be0a3206b8bc2da04",
+      "bytes": 85923,
+      "gitBlob": "4478f31fe993fc591045b43770936eb572e33b48",
+      "class": "import-excluded"
+    }
+  ]
+}
