@@ -1,0 +1,117 @@
+{
+  "schema": "casimirbot.consolidated_source_addendum.v1",
+  "status": "private_working_copy_not_published",
+  "public_base_head": "04fe5fe3c553d65c3b7599e6ce5c37d20568db73",
+  "canonical_base_commit": "2113d0e7547b018220da38d6adc4f36b5718fcd4",
+  "canonical_frozen_source_commit": null,
+  "private_package": "R384",
+  "private_executable_sha256": "bfe1a57c6443fdcbd420fd0ec428aeafb620edf5a0955382c2ef0faf64995c8a",
+  "files": [
+    {
+      "path": "server/services/helix-ask/committed-ask-route.ts",
+      "canonical_sha256": "2bf4b3c48e4c809d08661a393a95216780828d099470a71a1132fa5343181c5d",
+      "export_sha256": "2bf4b3c48e4c809d08661a393a95216780828d099470a71a1132fa5343181c5d",
+      "previous_public_sha256": "bdd033278ebebaee93a1dbf798075c05d68d8b997d037003666739d2ed8c7d64",
+      "bytes": 83494,
+      "transformation": [
+        "identity"
+      ],
+      "diff_review": "048.diff"
+    },
+    {
+      "path": "server/services/helix-ask/internet-search-intent.ts",
+      "canonical_sha256": "0498129be0ded7f42bc57c7d6ec78a6b4f0852b1b078d603cbd73bacde57534f",
+      "export_sha256": "0498129be0ded7f42bc57c7d6ec78a6b4f0852b1b078d603cbd73bacde57534f",
+      "previous_public_sha256": "53578584dca206a801708cfd36412942fe12ea177808aa2059ba00b5a6cb28ad",
+      "bytes": 27190,
+      "transformation": [
+        "identity"
+      ],
+      "diff_review": "049.diff"
+    },
+    {
+      "path": "server/services/public-context/catalog.ts",
+      "canonical_sha256": "038cb49568c4bd474673f8cd8f784e2a78957c9531d2ef4eba87084a6c7fda37",
+      "export_sha256": "038cb49568c4bd474673f8cd8f784e2a78957c9531d2ef4eba87084a6c7fda37",
+      "previous_public_sha256": "7259785080fc649760ca484c41aeb7a663db3416bfe23630e02111d6a6aba3bc",
+      "bytes": 12577,
+      "transformation": [
+        "identity"
+      ],
+      "diff_review": "050.diff"
+    },
+    {
+      "path": "server/services/public-context/principle-hypotheses.ts",
+      "canonical_sha256": "aa1cb5aa9dcc90418cf728011c78529fd25eaf2c11f5718ac5584510a32ce049",
+      "export_sha256": "86ba55425b937163aaa371f8493ae74b0f76c873dae53f27983ed7a97337ac25",
+      "previous_public_sha256": "e167f7fae1441f4069bb894f52f457654d94177dbdc125be7e1dad30786064f3",
+      "bytes": 20506,
+      "transformation": [
+        "CRLF to LF"
+      ],
+      "diff_review": "051.diff"
+    },
+    {
+      "path": "server/services/public-context/reflections.ts",
+      "canonical_sha256": "d95e97f1cadd41c898632d187c8219ba249bd935f727e63173f287f2388e1b50",
+      "export_sha256": "2ea6b88bec44413f9bb4f5cc533bd02b0d3594f33f6f0abe1bb3e6b329118348",
+      "previous_public_sha256": "692f0078ec8e04a2f7a1773c9472ab600b9e854e78afb32ca615fcb38f5abda1",
+      "bytes": 174924,
+      "transformation": [
+        "CRLF to LF"
+      ],
+      "diff_review": "052.diff"
+    },
+    {
+      "path": "server/services/solar-research/profile-package-retention.ts",
+      "canonical_sha256": "a9317157da9ca7d440a402e2d0353002ad2ab02962fd179fda1558d9a2e37d59",
+      "export_sha256": "a9317157da9ca7d440a402e2d0353002ad2ab02962fd179fda1558d9a2e37d59",
+      "previous_public_sha256": "8e41a9c35e973354fe434d04652831bda488e831cc56f2901c47781dce9077b8",
+      "bytes": 3147,
+      "transformation": [
+        "identity"
+      ],
+      "diff_review": "053.diff"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-artifact-family-audit-catalog.ts",
+      "canonical_sha256": "15635f899e112e3c48eb18cdd4cadb8090880fc1899ec498a020aad9da57aae7",
+      "export_sha256": "4a4f20bb4c4356e17d03b52a65799b4133253b6c81024a54fb0bc621d2db35c8",
+      "previous_public_sha256": "6cb7755e0d41ac5ab5d51fedef21a8a93fdf80c11d0a821277a80242e6ed646c",
+      "bytes": 11804,
+      "transformation": [
+        "CRLF to LF"
+      ],
+      "diff_review": "054.diff"
+    },
+    {
+      "path": "server/services/theory/casimir-formal-runtime-canary-service.ts",
+      "canonical_sha256": "b668a114ed687738df80527d94a7b5aef21cfe4de0f9d9e6349f52b7b61f0edb",
+      "export_sha256": "290efdd12b06f013cb9616ea89bbdba762824839a3e841a820576fc0b9ae219e",
+      "previous_public_sha256": "b0dfbcf1dc7c641d5ad9fa91b2ff58cb16f8407a07bd40966f819307848c0c51",
+      "bytes": 22480,
+      "transformation": [
+        "CRLF to LF"
+      ],
+      "diff_review": "055.diff"
+    },
+    {
+      "path": "server/services/theory/casimir-independent-numerical-verifier-job-service.ts",
+      "canonical_sha256": "ee726d81483c337f7049f667fd3e0037c3d76e5e994bf665f12048da5deed340",
+      "export_sha256": "f4b90a38465a309ea46003c330eeebae843622a1b8ddcaf5bd8124fc97cb508e",
+      "previous_public_sha256": "13ca8c15dcf37d529a483b58820cbe7cc5eb7207c3a75fbc5c4fff2232f0edf0",
+      "bytes": 38975,
+      "transformation": [
+        "CRLF to LF"
+      ],
+      "diff_review": "056.diff"
+    }
+  ],
+  "limits": [
+    "Private working-copy proposal, not published. Canonical source freeze and final public approval are pending.",
+    "Selected first-party source changes only; private platform history, profiles, artifacts and credentials are excluded.",
+    "Dependencies and optional research/disclosure surfaces remain under review; this segmented preview is not a standalone application.",
+    "Local fixture tests do not prove signed installed acceptance, live authentication, game actions or scientific/physical results.",
+    "The complete proposed tree and reachable public history still require scan/adjudication before publication."
+  ]
+}

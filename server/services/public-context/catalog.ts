@@ -5,6 +5,7 @@ import { MORAL_LIVING_SUBSTRATE_PRINCIPLES } from "@shared/moral-graph/living-su
 export type PublicLens = "civilization" | "theory" | "moral";
 // Public-only diagnostic locator; it does not alter the frozen scientific graph.
 export const PUBLIC_ELASTIC_RECOIL_BADGE_ID = "physics.scattering.elastic_nuclear_recoil_bound";
+export const EXPERIMENTAL_CYCLE_LEDGER_BADGE_ID = "physics.thermodynamics.closed_cycle_energy_ledger";
 export const publicContextEnabled = (): boolean => process.env.CASIMIR_PUBLIC_CONTEXT_ENABLED !== "0";
 export type PublicBadge = {
   id: string;
@@ -109,6 +110,26 @@ export function loadPublicBadgeCatalog(): Promise<Record<PublicLens, PublicBadge
         "A higher event rate or field occupation does not raise the maximum recoil energy of one assumed free-particle elastic collision; this badge does not verify any reported detector event.",
       ],
     });
+    // This source-reviewed candidate is local-only until the owner approves
+    // its exact public projection. It does not alter the frozen theory graph.
+    if (process.env.CASIMIR_PUBLIC_CONTEXT_EXPERIMENTAL_CYCLE_LEDGER === "1") {
+      theory.unshift({
+        id: EXPERIMENTAL_CYCLE_LEDGER_BADGE_ID,
+        title: "Closed-cycle energy and switching-work ledger",
+        summary: "For a repeatable cycle that changes an interaction parameter, count the work and heat needed to change and reset that parameter alongside mechanical output. A nonzero loop in one force-displacement plot alone does not establish net exported work or its energy source.",
+        status: "experimental public diagnostic candidate",
+        uncertainty: ["The system boundary, material state changes, heat and work flows, losses, and measurement uncertainty remain case-specific."],
+        source_refs: [
+          "https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics",
+          "https://arxiv.org/abs/1006.4065",
+        ],
+        claim_boundaries: [
+          "The first law requires a complete energy balance; it does not determine the sign or magnitude of net work for a proposed device.",
+          "Use a consistent energy-flow sign convention and count all inputs, outputs, losses, and changes in stored energy; a closed cycle cannot create net energy.",
+          "A study of material-dependent Casimir forces does not establish a free-energy engine or validate a particular switching cycle.",
+        ],
+      });
+    }
     const graph = await loadIdeologyGraphFromFile();
     const moral = graph.nodes.map((node): PublicBadge => ({
       id: node.id,

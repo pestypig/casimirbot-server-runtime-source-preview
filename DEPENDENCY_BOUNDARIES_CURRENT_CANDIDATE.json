@@ -1,0 +1,158 @@
+{
+  "status": "unpublished consolidated candidate disclosure",
+  "scope": "Omitted direct dependencies; selected source only, not a standalone application or test suite.",
+  "files": [
+    {
+      "path": "configs/research/casimir-formal-generation-lineage-audits/lanyon-gr-maxwell-b13da44.v1.json",
+      "category": "research_evidence",
+      "reason": "Research audit or captured replay evidence is outside selected source. Its omission prevents reproducing the corresponding evidence-dependent cases from this preview alone; source publication is not a proof or observed-world claim.",
+      "referenced_by": [
+        "server/services/theory/casimir-formal-artifact-family-audit-catalog.ts"
+      ]
+    },
+    {
+      "path": "configs/research/casimir-formal-theorem-audits/lanyon-gr-maxwell-b13da44.v1.json",
+      "category": "research_evidence",
+      "reason": "Research audit or captured replay evidence is outside selected source. Its omission prevents reproducing the corresponding evidence-dependent cases from this preview alone; source publication is not a proof or observed-world claim.",
+      "referenced_by": [
+        "server/services/theory/casimir-formal-artifact-family-audit-catalog.ts"
+      ]
+    },
+    {
+      "path": "server/db/client.ts",
+      "category": "database_runtime",
+      "reason": "Database runtime and these unselected migrations are omitted. No database rows, migration runner or complete schema/deployment is supplied.",
+      "referenced_by": [
+        "server/services/theory/runtime-tool-confirmation-postgres-replay-ledger.ts"
+      ]
+    },
+    {
+      "path": "server/services/helix-account/profile-storage-store.ts",
+      "category": "account_and_credential_runtime",
+      "reason": "Integrated account, credential, budget or profile-storage implementation is outside the existing selected preview boundary. No live configuration, credentials, account data or funded entitlement is supplied.",
+      "referenced_by": [
+        "server/services/solar-research/profile-package-reader.ts",
+        "server/services/solar-research/profile-package-retention.ts"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/realtime-room/room-store.ts",
+      "category": "live_room_runtime",
+      "reason": "Integrated room storage, source admission, consent, protected context and live transport are omitted. The preview cannot establish a connected room, GPT Live session, valid player release or current source grant.",
+      "referenced_by": [
+        "server/services/helix-ask/shared-room-ask-session.ts"
+      ]
+    },
+    {
+      "path": "server/services/physics-glyphs/ask-integration.ts",
+      "category": "research_and_artifact_runtime",
+      "reason": "Research/artifact service implementation is outside the existing selection. Source references do not supply an operating service, paid allowance or scientific result.",
+      "referenced_by": [
+        "server/services/helix-ask/committed-ask-route.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/catalog-next-options.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/moral-tag-scope.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/private-semantic-navigation.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/procedural-directory.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/public-projection-candidates.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/reviewed-claim-scope.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/reviewed-theory-descriptors.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/shared-next-options.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/sibling-navigation.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/snapshot-navigation.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/public-context/subject-facets.ts",
+      "category": "optional_public_context_runtime",
+      "reason": "Optional catalog/navigation/research-claim helpers remain outside the selected runtime subset. Their import names do not establish an enabled public feature or verified claim.",
+      "referenced_by": [
+        "server/services/public-context/reflections.ts"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-theory-execution-state-store.ts",
+      "category": "research_and_artifact_runtime",
+      "reason": "Research/artifact service implementation is outside the existing selection. Source references do not supply an operating service, paid allowance or scientific result.",
+      "referenced_by": [
+        "server/services/theory/casimir-formal-verifier-job-service.v2.ts",
+        "server/services/theory/casimir-independent-numerical-verifier-job-service.ts",
+        "server/services/theory/casimir-theory-execution-server-composition.ts"
+      ]
+    }
+  ],
+  "limits": [
+    "No transitive dependency completeness or standalone-build claim.",
+    "Source publication, final source freeze, installed acceptance and existing native/research evidence holds remain open.",
+    "No additional omitted code has been silently copied into a public source proposal."
+  ]
+}

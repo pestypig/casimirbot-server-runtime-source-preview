@@ -3,10 +3,7 @@ import type {
   HelixAskSourceTargetStrength,
 } from "@shared/helix-ask-source-target-intent";
 import type { ToolFamily } from "./tool-family-contract";
-import {
-  HELIX_LOCKED_WORKSTATION_PANEL_IDS,
-  HELIX_USER_WORKSTATION_PANEL_IDS,
-} from "@shared/helix-account-session";
+import { HELIX_REGISTERED_WORKSTATION_PANEL_IDS } from "@shared/helix-workstation-panel-ids.generated";
 import {
   contextualToolSuppressionBlocksFamily,
   detectContextualToolAdmissionSuppression,
@@ -18,19 +15,14 @@ import { extractExplicitCapabilityContracts } from "./explicit-capability-contra
 import { resolveAuthoritativeDocsTopicMatch } from "./docs-search";
 import { hasExplicitRepoEvidenceRequest } from "./repo-code-intent-detector";
 
-const KNOWN_WORKSTATION_PANEL_IDS = [
-  ...HELIX_USER_WORKSTATION_PANEL_IDS,
-  ...HELIX_LOCKED_WORKSTATION_PANEL_IDS,
-];
-
 const normalizeWorkstationSurfaceText = (value: string): string =>
-  value.toLowerCase().replace(/[_\s]+/g, "-");
+  value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 export const hasKnownWorkstationSurfaceScopeCue = (
   promptText: string,
 ): boolean => {
   const normalizedPrompt = normalizeWorkstationSurfaceText(promptText);
-  return KNOWN_WORKSTATION_PANEL_IDS.some((panelId) =>
+  return HELIX_REGISTERED_WORKSTATION_PANEL_IDS.some((panelId) =>
     normalizedPrompt.includes(panelId),
   );
 };

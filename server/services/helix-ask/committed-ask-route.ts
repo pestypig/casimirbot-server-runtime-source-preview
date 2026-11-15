@@ -1,4 +1,5 @@
 import crypto from "node:crypto";
+import { withPhysicsScenarioPresentation, physicsScenarioPresentationCapabilities } from "../physics-glyphs/ask-integration";
 import {
   HELIX_COMMITTED_ASK_ROUTE_SCHEMA,
   type HelixCommittedAskRoute,
@@ -176,6 +177,7 @@ const sourceBackedTargets = new Set([
 ]);
 
 export const inferCommittedRouteToolFamily = (capabilityId: string): string => {
+  if (["physics-glyphs.command", "physics-glyphs.inspect", "physics-glyphs.catalog", "physics-glyphs.validate_scenario", "physics-glyphs.calculate"].includes(capabilityId)) return "workstation_action";
   if (capabilityId === "room.mission_result.read_selected") return "room_mission_result";
   if (/^com\.casimirbot\.minecraft\./i.test(capabilityId)) return "live_environment";
   if (/^com\.casimirbot\.environment\./i.test(capabilityId)) return "live_environment";
@@ -694,7 +696,7 @@ export function reconcileRouteProductContractToCommittedRoute(input: {
   };
 }
 
-export function buildCommittedAskRoute(input: {
+function buildCommittedAskRouteBase(input: {
   turnId: string;
   promptText: string;
   selectedRoute: string;
@@ -1586,6 +1588,13 @@ export function buildCommittedAskRoute(input: {
   };
 }
 
+export function buildCommittedAskRoute(input: Parameters<typeof buildCommittedAskRouteBase>[0]): HelixCommittedAskRoute {
+  const route = withPhysicsScenarioPresentation(buildCommittedAskRouteBase(input), input.payload);
+  const optional = physicsScenarioPresentationCapabilities(route);
+  const baseCommitId = route.commit_id.replace(/:presentation:[a-f0-9]+$/, "");
+  return { ...route, commit_id: optional.length ? `${baseCommitId}:presentation:${hashShort(optional)}` : baseCommitId };
+}
+
 export function evaluateCommittedAskRouteCompatibility(input: {
   committedRoute: HelixCommittedAskRoute | null | undefined;
   payload?: RecordLike | null;
@@ -1630,6 +1639,10 @@ export function buildRouteEvidenceAuthority(input: {
         admission_ref: route.commit_id,
       }))
     : [];
+  admittedFromRoute.push(...physicsScenarioPresentationCapabilities(route ?? null).map(capability_id => ({
+    capability_id, family: inferCommittedRouteToolFamily(capability_id),
+    reason: "explicit_connected_physics_presentation_preference", admission_ref: route!.commit_id,
+  })));
   const rejectedFromRoute = route
     ? route.capability_policy.suppressed_tool_families.map((family): HelixRouteEvidenceAuthorityTool => ({
         capability_id: `family:${family}`,
@@ -1734,6 +1747,7 @@ export function assertCapabilityAllowedByCommittedRoute(input: {
 
   if (
     route.capability_policy.allowed_tool_families.length > 0 &&
+    !physicsScenarioPresentationCapabilities(route).includes(input.capabilityId) &&
     family !== "unknown" &&
     family !== "model_only" &&
     !route.capability_policy.allowed_tool_families.includes(family)

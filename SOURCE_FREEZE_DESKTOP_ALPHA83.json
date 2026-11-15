@@ -1,0 +1,1629 @@
+{
+  "schema": "casimirbot.selected_source_freeze.v1",
+  "observed_at": "2026-11-15T09:13:47.354977+00:00",
+  "canonical_source_commit": "7e5414c4b2eaac794f8cb0a46bfa53570631c68a",
+  "release_tag": "desktop-v0.1.0-alpha.83",
+  "public_base_head": "04fe5fe3c553d65c3b7599e6ce5c37d20568db73",
+  "selected_files": 179,
+  "files": [
+    {
+      "path": "server/control/sectorControlPreflight.ts",
+      "canonical_sha256": "537c778c0501fa24d222a9fa7a44ed58e563a82dc527e533cd4000eebbc8febe",
+      "export_sha256": "537c778c0501fa24d222a9fa7a44ed58e563a82dc527e533cd4000eebbc8febe",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/curvature-brick.ts",
+      "canonical_sha256": "00d65691250a67b08f506b8f416b4daace3f05a5532f80720d563b03264fe426",
+      "export_sha256": "bf8da29c003331f62d2116c2e6ac9cc5f1eccff37e9b0a60befc573b24763029",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/energy-pipeline.ts",
+      "canonical_sha256": "0588e549276e9bb57cdc8d58e7b9061be528a7d31570c7433975c929d3ee6064",
+      "export_sha256": "e03bc099c20978bd89fdf017e944728cc184e82a2d512df1e91ee96691a3bdd0",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr-evolve-brick.ts",
+      "canonical_sha256": "c064c30055198096471480d04d202e0718853d478a246b2963b4c80173c849a0",
+      "export_sha256": "9afa940fd6d8c4ba7417eb9b944476727f7feb3c19e0db09e9b4d5dd63980a95",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr-initial-brick.ts",
+      "canonical_sha256": "458d03424dc998f8e790b5a0362d3cc75f08b3e644d3d71b010c412bbe2d38af",
+      "export_sha256": "458d03424dc998f8e790b5a0362d3cc75f08b3e644d3d71b010c412bbe2d38af",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/constraint-evaluator.ts",
+      "canonical_sha256": "84a47915e35561c8304b837b4491ff24072242060c3070320fc104ac6f57d52a",
+      "export_sha256": "d4bc5fc76baf42a64eef9596872dcbb79f7fece64bb9e110125839da42aba065",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/evolution.ts",
+      "canonical_sha256": "4403184010fb2722890abcea4d3c645029692c823e06f84e59478f45ced5e826",
+      "export_sha256": "07c989d56e5c59c80346382814903f9d73dbf88758454fa266e097dd43ae0610",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/evolution/brick.ts",
+      "canonical_sha256": "268f7ae029fce0771015453f9d78698df48e6dd401ff82b895b8064c3bb32e99",
+      "export_sha256": "baaadcb8cac5d897b1a9c02f1fabc9413dc307af17ee78fe1e9535b8ced436ad",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/evolution/index.js",
+      "canonical_sha256": "5d6fcf9c7a083693a2ebaadf5e6e4ee68cda1173a2168534a0d84ec06ddf1241",
+      "export_sha256": "64e55237cb4410e17d968cd08975566059f27638ebb0b86048031b987ba251c4",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/evolution/index.ts",
+      "canonical_sha256": "39986f2537e85610911f12a88d2f2b8fe4be06b5e5e0d9207f62a2e8d82299b1",
+      "export_sha256": "2fe39e00c7e6d9e531f761dc67e9941896940b9cd43db157ffb12cd9d01c0be8",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/evolution/initial-data.ts",
+      "canonical_sha256": "2bc71552a3b1c46ff12a645f13b874840d390984fc00a7e010bc8e548bf9697e",
+      "export_sha256": "62d641d5e1f353ca3caff1b9508f5aea3982189257b3913890a2156cc243c56c",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/evolution/solver.ts",
+      "canonical_sha256": "eb393b53a7618a9a83d2dd66797ef8bdfd2cd8bf02d26f127bd994cbcd86ba1b",
+      "export_sha256": "c58bc9563187dfacbd315009aa091bfa15fbc78bc7c169716b71b12218ea24f1",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/evolution/stress-energy.ts",
+      "canonical_sha256": "71720d6ae99e6a31942228bd61a4558f9eb95d0624e0ed72cada85bb674a601f",
+      "export_sha256": "01b6409934ca7ac66fecbb4473718cc0c4f100751c06fdc060ab0d7ded48de74",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-agent-loop.ts",
+      "canonical_sha256": "3d5dbd138c2f3990418d5ae2a8f97f94234154ffb0ed6b2bdd45a2c8f18f54e0",
+      "export_sha256": "9a44e9716a867eb15d9aa23195309674c22d23a61892a87c2f7108b04eb5f247",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-assistant-adapter.ts",
+      "canonical_sha256": "adbe4f50ec3355e215ed7151ef339bec345b58a25f731eb0d9e5ac67e550e4be",
+      "export_sha256": "adbe4f50ec3355e215ed7151ef339bec345b58a25f731eb0d9e5ac67e550e4be",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-constraint-network.ts",
+      "canonical_sha256": "fa2353e783708df082a78b6f3bfe682d9ed0929188b36a6f332c2f49011407df",
+      "export_sha256": "b585b572cd7322de7d53b36cfa52763ca5e443e05e386685ec2854ba05649ee5",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-constraint-policy.ts",
+      "canonical_sha256": "1e67bf2cf4d64d5e54328d1647e455b0da4e8f67766809c62c63bc6f12ce3fbc",
+      "export_sha256": "1e67bf2cf4d64d5e54328d1647e455b0da4e8f67766809c62c63bc6f12ce3fbc",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-evaluation.ts",
+      "canonical_sha256": "f0342c98a8edf5ab980a8fe2891d41334726fb852b78af400a1b155832b45593",
+      "export_sha256": "8d6c3cb0398ab79fc7feca617b91da7d7e9841cac55136975a06a6b57692a92a",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-os-payload.ts",
+      "canonical_sha256": "06d1fdeb607406df189b7d10d9a0b1ef39703fd13c692f5651f1b3a792a105b1",
+      "export_sha256": "06d1fdeb607406df189b7d10d9a0b1ef39703fd13c692f5651f1b3a792a105b1",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-worker-bootstrap.mjs",
+      "canonical_sha256": "acb21ab84275f397e5ebba4cd20711ed71a667573209a8b7f2ef3dd6daf0f642",
+      "export_sha256": "2692896c5accc94e6e9a2da35e9aa98948ef1d65d713a007f176b29e71bc8de7",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-worker-client.ts",
+      "canonical_sha256": "f2cba1f4c1aa94bbd72162600551520a12b4cde0b14af5277229c3a0e2c6092e",
+      "export_sha256": "5a954b623aec81bb6c1421d21e8dde1592a08bdd54be4a0babc1fc15c3cfc654",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-worker-types.ts",
+      "canonical_sha256": "a99c9eb9aaf9fa28e29ee92a236acddf8bab04815a10d6233f2612f342141757",
+      "export_sha256": "a99c9eb9aaf9fa28e29ee92a236acddf8bab04815a10d6233f2612f342141757",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/gr/gr-worker.ts",
+      "canonical_sha256": "16eafc0d2d61a2e157716dee8dd675635f72cf8deedd1d4afb8895eb69e5b03c",
+      "export_sha256": "634d822340a5b5c82df119f8857afb636bfa39dc03272d759d5a8bd19c1a49db",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/helix-proof-pack.ts",
+      "canonical_sha256": "a166f6748cd4be4867f027f70dd8a4bcb1e2f32ffff654b4b59507d021a249de",
+      "export_sha256": "62b26b7d9749952216413512bdad7d48e900c58d7465731f8068a350c9184bec",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/lapse-brick.ts",
+      "canonical_sha256": "6936f0df1c992657661c357af439c942237fdd6f7059598caae0c792edb93c6d",
+      "export_sha256": "6936f0df1c992657661c357af439c942237fdd6f7059598caae0c792edb93c6d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/modules/module-loader.ts",
+      "canonical_sha256": "dc2c7b8c02b09448b2bac2078f3b7911bef038326ac7e5ed3f9ef07fcd63e646",
+      "export_sha256": "dc2c7b8c02b09448b2bac2078f3b7911bef038326ac7e5ed3f9ef07fcd63e646",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/modules/qi/qi-controller.ts",
+      "canonical_sha256": "6c01b19f95cb421f9fb1e768c0cbe245d453947b9786eee69da0cf1fad8f3dc9",
+      "export_sha256": "6c01b19f95cb421f9fb1e768c0cbe245d453947b9786eee69da0cf1fad8f3dc9",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/neuro/index.ts",
+      "canonical_sha256": "a1e4856a166c63b70e6b2b844cd029208cc208d63a77141c5576d3710f64643f",
+      "export_sha256": "b3743e4507eefbc0ed4aa17474f97c6d5c07ebf9b6093c0fa73af3c3b7713bd2",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/neuro/kernel/neurostate-loop.ts",
+      "canonical_sha256": "494254e16b7f0208331da5b9bf6f53102663b1ed6597b08114f6a3099599e230",
+      "export_sha256": "8c5d69d2f5eb75d21b07dd69a11729e210448af2c7088d85b7d625a9f8cbafd2",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/neuro/loop-controller.ts",
+      "canonical_sha256": "7abea94616879b7e1dca62c768dc4c3bcf8d6151e4ae912c4d958c50499e5970",
+      "export_sha256": "2e4c693679666ac5a899afa8200cf0611494e09e604e7fd3005e49ceaa5e3f33",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/adapter/run.ts",
+      "canonical_sha256": "2dbd22736c239c4764340fa8e148e5d9532c99a575b8be14375652114888cbe7",
+      "export_sha256": "d9e0ac57af0ad5861331056e27398a13aa46322cb3eca68be4c46166d17d4413",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/counterpart-references.ts",
+      "canonical_sha256": "fce1d7ed0792b701961714f55ace963db6b5f7e2af20b225cef06881780ebbe2",
+      "export_sha256": "711e74736087744a366a14d9e9655d7b3d4f956fc81d5ef24c1c72a5d85c9089",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/dated-negotiating-conditions.ts",
+      "canonical_sha256": "3826d3424000d640246ee1b632253cc31ae192f62cb89f725b048cfd1d6a14ee",
+      "export_sha256": "3826d3424000d640246ee1b632253cc31ae192f62cb89f725b048cfd1d6a14ee",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/dated-operating-reports.ts",
+      "canonical_sha256": "a1c8dcee49140ec190df8d168f784d8724bf92490a901d47ddd9c7a709b9cace",
+      "export_sha256": "a1c8dcee49140ec190df8d168f784d8724bf92490a901d47ddd9c7a709b9cace",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/designated-wetlands.ts",
+      "canonical_sha256": "594add38eaddd61b3368d6065edfa11619006a59ec00c2c4503a3d65a79a5f58",
+      "export_sha256": "594add38eaddd61b3368d6065edfa11619006a59ec00c2c4503a3d65a79a5f58",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/family-context.ts",
+      "canonical_sha256": "5043d9704a9aa11f97ab5955bbbd425d35cd89353eeb284aac3ca6556adb4899",
+      "export_sha256": "5043d9704a9aa11f97ab5955bbbd425d35cd89353eeb284aac3ca6556adb4899",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/humanitarian-context.ts",
+      "canonical_sha256": "d230c4698445f491110f7ec7e34eaf9e6f6a490505e1806b9e91ffb33146d711",
+      "export_sha256": "d230c4698445f491110f7ec7e34eaf9e6f6a490505e1806b9e91ffb33146d711",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/issue-comparison.ts",
+      "canonical_sha256": "d825002c8249d742288e68b66b3aec387da6af955561b5c12c025a38366017d0",
+      "export_sha256": "7b4cfbe1e66d2b6d338c994ee19aac55365d607ce94659814df6f70916047809",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/mapped-option-reasoning-brief.ts",
+      "canonical_sha256": "0d665c67ce0ea85176edcff3c7a3f08b34fca50432b1d2650c78298244e76bd8",
+      "export_sha256": "0d665c67ce0ea85176edcff3c7a3f08b34fca50432b1d2650c78298244e76bd8",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/mapped-path-option-review.ts",
+      "canonical_sha256": "27ff48af43ffa2fabad3d07fd575ced209f10d825d8bfddda7d100734c9c1d49",
+      "export_sha256": "27ff48af43ffa2fabad3d07fd575ced209f10d825d8bfddda7d100734c9c1d49",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/pair-glance.ts",
+      "canonical_sha256": "3f5b11578e4a98c608c253b1e156a42d7b3dc154ae37cb66b1a553d0c2598632",
+      "export_sha256": "570ab737dcf2857998f8a02eccbb1c5b09ec0bfaaba2f4a54693207493e812d6",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/relationship-network.ts",
+      "canonical_sha256": "9b5fef148b261a34626b9b543afcb97eda6e2b76895d866e8b6cc4dc57c9c9e7",
+      "export_sha256": "9b5fef148b261a34626b9b543afcb97eda6e2b76895d866e8b6cc4dc57c9c9e7",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/scenario-comparison.ts",
+      "canonical_sha256": "8cebc2c6b1d8ba50829a2828b611b37ee2712be6360e95c059e587dd025e219c",
+      "export_sha256": "142e67d0a70209cf7d5ce9169ad0cb25dad2b45cb11e4d2f2f7066fe5554eed8",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/scenario-reasoning-brief.ts",
+      "canonical_sha256": "f73cb355e3694c35c80d9ee8d40853e6e68ed0285dd7494518b34e88bc2dd7d0",
+      "export_sha256": "3532f914f227e6324fe0555b14f41b82b438a77695e82c7cee0c4f86a4b1c413",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/third-party-operating-context.ts",
+      "canonical_sha256": "11df6f42788b7c93008ed38c0d782e31ed5f3ed863efa3b7f4033c3e29398381",
+      "export_sha256": "11df6f42788b7c93008ed38c0d782e31ed5f3ed863efa3b7f4033c3e29398381",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-evidence.ts",
+      "canonical_sha256": "3330ca2f7622239d80392d100e7f84e8d6081509cda9e239fc61694284a80cd8",
+      "export_sha256": "3330ca2f7622239d80392d100e7f84e8d6081509cda9e239fc61694284a80cd8",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-pair-review-leads.ts",
+      "canonical_sha256": "7e61991e59462ba4cd3540fc1ce9a7cd661ca901475c08e34e8cf2f280461cb6",
+      "export_sha256": "7e61991e59462ba4cd3540fc1ce9a7cd661ca901475c08e34e8cf2f280461cb6",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-pair-topic-passages.ts",
+      "canonical_sha256": "168e3c49b742a5f0b3e2dafc137368a38f8b7efc91ac9d514e0d720c948c132d",
+      "export_sha256": "168e3c49b742a5f0b3e2dafc137368a38f8b7efc91ac9d514e0d720c948c132d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-provisional-segment.ts",
+      "canonical_sha256": "0b3fe941e9c20682e88be255d88ba244e14f6ed3acaa8e2dc99d55d5f5294757",
+      "export_sha256": "0b3fe941e9c20682e88be255d88ba244e14f6ed3acaa8e2dc99d55d5f5294757",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-provisional-topic-discovery.ts",
+      "canonical_sha256": "f5031831994601fde33c46ffac02c189a21ae823280cf416bd0e8b9fbe9f1afd",
+      "export_sha256": "f5031831994601fde33c46ffac02c189a21ae823280cf416bd0e8b9fbe9f1afd",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-submitted-page-leads.ts",
+      "canonical_sha256": "55d74ce513ac85ebe72334ea12270f7d3572282aae5a8f07359b7dc633119a74",
+      "export_sha256": "55d74ce513ac85ebe72334ea12270f7d3572282aae5a8f07359b7dc633119a74",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-diplomacy/unga81-submitted-page.ts",
+      "canonical_sha256": "95cbc6038158f26342f4ace7485dbce375c42d208a4ca4733ae3f033bae0c4f5",
+      "export_sha256": "95cbc6038158f26342f4ace7485dbce375c42d208a4ca4733ae3f033bae0c4f5",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-batch-evidence.ts",
+      "canonical_sha256": "c4e73e16e550e03e894861664cb5fc4379ff30e6322a7c04f93ade3bc36b8d3f",
+      "export_sha256": "c4e73e16e550e03e894861664cb5fc4379ff30e6322a7c04f93ade3bc36b8d3f",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-evidence-plan.ts",
+      "canonical_sha256": "b620da8353b7e8dd05297f1fc5f9c5bc9070bde55e2ba1d7b1928e38890d9c02",
+      "export_sha256": "b620da8353b7e8dd05297f1fc5f9c5bc9070bde55e2ba1d7b1928e38890d9c02",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-network-topology.ts",
+      "canonical_sha256": "50f3d7ecd827ecc1808d8543b17545b354f6ed8f583c53b841945f54ca6e5cc9",
+      "export_sha256": "50f3d7ecd827ecc1808d8543b17545b354f6ed8f583c53b841945f54ca6e5cc9",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-batch.ts",
+      "canonical_sha256": "d8be6be1629e722a56eec202ca993a8257e7e6cb4519717319ddcff3e0b892ce",
+      "export_sha256": "d8be6be1629e722a56eec202ca993a8257e7e6cb4519717319ddcff3e0b892ce",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-ledger.ts",
+      "canonical_sha256": "ae09df2b7fadb31579311d9d75a81ae9b24399165f3c0eea4f9fc3c1417f4269",
+      "export_sha256": "ae09df2b7fadb31579311d9d75a81ae9b24399165f3c0eea4f9fc3c1417f4269",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-receipt-chain.ts",
+      "canonical_sha256": "7ccb4f1568acdfa68e53bf0ad410aa49d358bdc767dc1d226e7a2440ee642785",
+      "export_sha256": "7ccb4f1568acdfa68e53bf0ad410aa49d358bdc767dc1d226e7a2440ee642785",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-path-screen.ts",
+      "canonical_sha256": "86c0ad4ecb3b8289723353b8d22f5666f24b829e4b57afcbb31e336da177adf4",
+      "export_sha256": "86c0ad4ecb3b8289723353b8d22f5666f24b829e4b57afcbb31e336da177adf4",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/corridor-scale-window-evidence.ts",
+      "canonical_sha256": "4eabd22a62a09659c7c66f3596ddbe8b00d3e49ac5aa10963eaccbdbdb80b785",
+      "export_sha256": "4eabd22a62a09659c7c66f3596ddbe8b00d3e49ac5aa10963eaccbdbdb80b785",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/diplomatic-corridor-packet.ts",
+      "canonical_sha256": "2d84699338df458ecc57e430433d6cb1c159f04f5e9781b368e8dbacd78dd112",
+      "export_sha256": "2d84699338df458ecc57e430433d6cb1c159f04f5e9781b368e8dbacd78dd112",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/index.ts",
+      "canonical_sha256": "b8717258ce8c14706b24dc5e89daabbdb33c742b0f4b860ee21e0f3184f3ad96",
+      "export_sha256": "b8717258ce8c14706b24dc5e89daabbdb33c742b0f4b860ee21e0f3184f3ad96",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/mapped-network-route-options.ts",
+      "canonical_sha256": "9e666a89bf90f980fc152b9ea008cb9b3456c0e9f5e4e3fd3dfaab0354857eb4",
+      "export_sha256": "9e666a89bf90f980fc152b9ea008cb9b3456c0e9f5e4e3fd3dfaab0354857eb4",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-country-candidates.ts",
+      "canonical_sha256": "ab649e1165cc39c6193d19b1c00ee8c960ac165d9d2ab1762562b9eb4b1d950c",
+      "export_sha256": "ab649e1165cc39c6193d19b1c00ee8c960ac165d9d2ab1762562b9eb4b1d950c",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-country-geometry.ts",
+      "canonical_sha256": "86af4902bba6672964ee59cbdabc123cba17803fc6fb5f92183e4ae7619598ea",
+      "export_sha256": "86af4902bba6672964ee59cbdabc123cba17803fc6fb5f92183e4ae7619598ea",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-hydrography.ts",
+      "canonical_sha256": "20d19edaf4421623b9e516d734e9cc2036251424140c74ae1e9ca2216eb3f740",
+      "export_sha256": "20d19edaf4421623b9e516d734e9cc2036251424140c74ae1e9ca2216eb3f740",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/natural-earth-lakes.ts",
+      "canonical_sha256": "a92321819482b3a3b5d12860155705cf93f7be5423177e3a6cf246a1009be48a",
+      "export_sha256": "a92321819482b3a3b5d12860155705cf93f7be5423177e3a6cf246a1009be48a",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/proposed-corridor-screen.ts",
+      "canonical_sha256": "e6026059d487329eeefbf5b4447933f3c53dc71c055d1d5544010dd323d6ab90",
+      "export_sha256": "e6026059d487329eeefbf5b4447933f3c53dc71c055d1d5544010dd323d6ab90",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/ramsar-wetland-boundary-screen.ts",
+      "canonical_sha256": "63fd871e86aebcd02954a068baa5019192f7ea6e1dfad2db13cb55a38a8bd645",
+      "export_sha256": "63fd871e86aebcd02954a068baa5019192f7ea6e1dfad2db13cb55a38a8bd645",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/route-hydrography-review.ts",
+      "canonical_sha256": "6276a2a5cf6626006557093dc2aa41177f736cc8965438e36833b23518139ece",
+      "export_sha256": "6276a2a5cf6626006557093dc2aa41177f736cc8965438e36833b23518139ece",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/civilization-live-sources/route-lake-review.ts",
+      "canonical_sha256": "79aa4be4e4acaa3ffe47c761995914ffe8efa48240d1a484a21c080d12595837",
+      "export_sha256": "79aa4be4e4acaa3ffe47c761995914ffe8efa48240d1a484a21c080d12595837",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/collapse-benchmark.ts",
+      "canonical_sha256": "2e92fba8001629d8d3f3e35b2c5d94092e2512ba68eb89fd1a9a892efa4e7ff4",
+      "export_sha256": "2e92fba8001629d8d3f3e35b2c5d94092e2512ba68eb89fd1a9a892efa4e7ff4",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/debate/orchestrator.ts",
+      "canonical_sha256": "ae3f72a49e7a476932c5e22bc3c1f38cc396069f81a8b479cd468a194f629999",
+      "export_sha256": "b63272146b8b4a90cc4f5de156cd477c78af53358798b3bff0a03eb2607b60d0",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/debate/prompts.ts",
+      "canonical_sha256": "6091854d0e3d83ea1906277b5656142dcd92306a1f8327413cddc72217882dec",
+      "export_sha256": "6091854d0e3d83ea1906277b5656142dcd92306a1f8327413cddc72217882dec",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/debate/star-bridge.ts",
+      "canonical_sha256": "43d5be18eb15962e4948a7c70cec398447ab072f1d38b10a10486096a5acea05",
+      "export_sha256": "43d5be18eb15962e4948a7c70cec398447ab072f1d38b10a10486096a5acea05",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/debate/telemetry-store.ts",
+      "canonical_sha256": "7feb5c484e4fdc20eda9bd7fd02e85b81f356a27bb0b6fbbe000172e981ccb74",
+      "export_sha256": "7feb5c484e4fdc20eda9bd7fd02e85b81f356a27bb0b6fbbe000172e981ccb74",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/debate/types.ts",
+      "canonical_sha256": "b214e337a35efe8dadf76006bd7fdab0cb8690e90a222cd0e349e2e1a9aa51c0",
+      "export_sha256": "f6759a24a7ffb902771c1d71923d6dba81cdf863ac39ad567817f3b0225c07c4",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/debate/warpPromptHelpers.ts",
+      "canonical_sha256": "f056d689a3572c194cb6403ab0af9be756e9b35efaa74fc391c1c7289eed8150",
+      "export_sha256": "f056d689a3572c194cb6403ab0af9be756e9b35efaa74fc391c1c7289eed8150",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/dp-adapter-build.ts",
+      "canonical_sha256": "f3b863698489d3a5b3476913945c6377c9faa5cab05e541fb46700a3a7d131e8",
+      "export_sha256": "f3b863698489d3a5b3476913945c6377c9faa5cab05e541fb46700a3a7d131e8",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/dp-adapters.ts",
+      "canonical_sha256": "4bf358ef102a97f5532be2450dc330c9b9088660685897c58dfe87d5dabf6e0f",
+      "export_sha256": "4bf358ef102a97f5532be2450dc330c9b9088660685897c58dfe87d5dabf6e0f",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/dp-planner.ts",
+      "canonical_sha256": "69a50ae8af1742acda04e14641222d41de049316f427aa3bfbed5b31b4d195a2",
+      "export_sha256": "86debc81d88a945f4e8d25bd2d6bbd98b38f36b4e624122d301089f896763bb8",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/active-context-tool-requests.ts",
+      "canonical_sha256": "57324bbebd42e4e641148d312f9a43bfcce956ad247882588c2057f2ea0cb4c6",
+      "export_sha256": "57324bbebd42e4e641148d312f9a43bfcce956ad247882588c2057f2ea0cb4c6",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/brokerage-environment-tool-requests.ts",
+      "canonical_sha256": "59eb8451ccab7b426156b5e1d27bebc3b371705ffd6b4d2a7f7abdf45ffb4894",
+      "export_sha256": "59eb8451ccab7b426156b5e1d27bebc3b371705ffd6b4d2a7f7abdf45ffb4894",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/codex-native/model-policy.ts",
+      "canonical_sha256": "d2e0f9db575f777b203c1b9ab0b728d9bd55280af2135b8800cb428187c14a16",
+      "export_sha256": "d2e0f9db575f777b203c1b9ab0b728d9bd55280af2135b8800cb428187c14a16",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/explicit-tool-requests.ts",
+      "canonical_sha256": "c5793375513a014dfb593c86dc25e4d2fafb56994a5c10d4405dccf453fb58ce",
+      "export_sha256": "c5793375513a014dfb593c86dc25e4d2fafb56994a5c10d4405dccf453fb58ce",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/gateway-request-dedupe.ts",
+      "canonical_sha256": "89a68d25f97050d269a97f2b05e089016ca85f1a630e8a307b56f632a771e319",
+      "export_sha256": "89a68d25f97050d269a97f2b05e089016ca85f1a630e8a307b56f632a771e319",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/live-pipeline-control-tool-requests.ts",
+      "canonical_sha256": "364e1f3fc5d3203b9e7021558976fbcb5e82625040052deb7d79e334a4c36846",
+      "export_sha256": "364e1f3fc5d3203b9e7021558976fbcb5e82625040052deb7d79e334a4c36846",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/agent-providers/prompt-named-tool-requests.ts",
+      "canonical_sha256": "8e330f13940fc96122f7d86c53cde7ad98a2cf682d0b7eb750eea661016cfed0",
+      "export_sha256": "8e330f13940fc96122f7d86c53cde7ad98a2cf682d0b7eb750eea661016cfed0",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/api-parity-probe.ts",
+      "canonical_sha256": "6662deb3f09f4807fee456c313a3f67f25a90a808264526de3b999a5c38c5606",
+      "export_sha256": "6662deb3f09f4807fee456c313a3f67f25a90a808264526de3b999a5c38c5606",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/ask-source-target-arbitrator.ts",
+      "canonical_sha256": "386e7beac3c54b04f002b6fab9f8bcc4a371bdd10b20c3c4127a4aab727cbd3f",
+      "export_sha256": "3c3eb80228c776e714e0d0a559093c8e57682689458c1365782aeb0b05c2e749",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/ask-turn-solver-trace.ts",
+      "canonical_sha256": "689cfae41617b58408b2f52417d1ee95e19d04394f2c42a222358e464c16e7b6",
+      "export_sha256": "2349b2aa0d737e45d3e5614e8b477c193865f0e45cb0cd4de5f3bc5aaedfb29f",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/ask-turn-solver.ts",
+      "canonical_sha256": "29ef063bb50326e04158d2d3ae79536b2510248d87713b71f76a079803161c9d",
+      "export_sha256": "29ef063bb50326e04158d2d3ae79536b2510248d87713b71f76a079803161c9d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/canonical-terminal-projection-verifier.ts",
+      "canonical_sha256": "083d99155c0369ad5459cdf793d201deafbe22c73beb6f1248dc25997f4da7bc",
+      "export_sha256": "083d99155c0369ad5459cdf793d201deafbe22c73beb6f1248dc25997f4da7bc",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/capability-contract-arbitration.ts",
+      "canonical_sha256": "092934154c0b9659a7a9c8a5df074e4d001954758879389cda2530c6ecb13baa",
+      "export_sha256": "092934154c0b9659a7a9c8a5df074e4d001954758879389cda2530c6ecb13baa",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/capability-itinerary.ts",
+      "canonical_sha256": "d45fcc0e9e4ee1598be86f2c9c88f3334f17b2225c8b03f440703c26f1a74f0a",
+      "export_sha256": "d45fcc0e9e4ee1598be86f2c9c88f3334f17b2225c8b03f440703c26f1a74f0a",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/capability-planner.ts",
+      "canonical_sha256": "7e3d7a8f8781a854c235246307d12dade0625f1a83782afee05f3321b472ae0d",
+      "export_sha256": "716302a97c2d8106a5f05fe920274d3ff206fd78c176068c01328e64ce8d18c9",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/committed-ask-route.ts",
+      "canonical_sha256": "2bf4b3c48e4c809d08661a393a95216780828d099470a71a1132fa5343181c5d",
+      "export_sha256": "2bf4b3c48e4c809d08661a393a95216780828d099470a71a1132fa5343181c5d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/compound-capability-contract.ts",
+      "canonical_sha256": "2fe2ab155ff2a45f3642eed503e99e1e8fe9eaa1161932b6cc834957f5f0b0f7",
+      "export_sha256": "2fe2ab155ff2a45f3642eed503e99e1e8fe9eaa1161932b6cc834957f5f0b0f7",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/evidence-reentry-gate.ts",
+      "canonical_sha256": "758c31cdbb62b925d02ee6ae78bdc9a08df5034802ad291f5b6cba21f9d4b47e",
+      "export_sha256": "a073bd442dd912c95c8ddd1a967630b6f5ddc3e50f260f2245b21c462475884e",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/evidence-target-arbitration.ts",
+      "canonical_sha256": "b6f64716475037948770b17202a21a5ea935d0a51d2a14838a2c33e4f6753c6b",
+      "export_sha256": "b6f64716475037948770b17202a21a5ea935d0a51d2a14838a2c33e4f6753c6b",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/explicit-capability-contract.ts",
+      "canonical_sha256": "a118e6b9367ddb26cd743e1b8c3bb598960c4910534d42052d405a4c5e93b2cb",
+      "export_sha256": "a118e6b9367ddb26cd743e1b8c3bb598960c4910534d42052d405a4c5e93b2cb",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/external-turn-projection.ts",
+      "canonical_sha256": "bc02b91ad8b2ab30d0a34686132a425ebe33d0d75d48231231ff66624dc34669",
+      "export_sha256": "bc02b91ad8b2ab30d0a34686132a425ebe33d0d75d48231231ff66624dc34669",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/final-answer-draft-terminal-materializer.ts",
+      "canonical_sha256": "4bcc46a301ae210b27bd225c50475c2bbbfec960b4f789dc4b4e1932f12a4d17",
+      "export_sha256": "4bcc46a301ae210b27bd225c50475c2bbbfec960b4f789dc4b4e1932f12a4d17",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/internet-search-intent.ts",
+      "canonical_sha256": "0498129be0ded7f42bc57c7d6ec78a6b4f0852b1b078d603cbd73bacde57534f",
+      "export_sha256": "0498129be0ded7f42bc57c7d6ec78a6b4f0852b1b078d603cbd73bacde57534f",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/live-pipeline-control-terminal.ts",
+      "canonical_sha256": "5e1fd3f607da129b864d16d74a8ce3a4071b4d79ef6900451f6e1ebf66a36a48",
+      "export_sha256": "5e1fd3f607da129b864d16d74a8ce3a4071b4d79ef6900451f6e1ebf66a36a48",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-context-policy.ts",
+      "canonical_sha256": "604f0cc2098ad978550613c17950a5d983093ccf6bd9f2a3f728113759a1c7b2",
+      "export_sha256": "604f0cc2098ad978550613c17950a5d983093ccf6bd9f2a3f728113759a1c7b2",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-executor.ts",
+      "canonical_sha256": "f58859bb98b33565598b31968fddc604cce0b130eff602536b75cef724c50cd1",
+      "export_sha256": "bd3f379b7c0b9ada6ae26605ffe7b0dd82d4c9520cd9a64d4ff21cfc190f637b",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-final-draft.ts",
+      "canonical_sha256": "6b31a69851dd1af1503c2559d55c1c14cd168e875ddb65847c05a524eead3119",
+      "export_sha256": "dd616273b45e49d50fdd50d9d0b4aab325de61292b8a2e7a7969285b653f47f0",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-packet.ts",
+      "canonical_sha256": "4bdda5ea0e78105f9908809d740ed8c2cedaacd6537a8aeb9de5c6228d6e8ec5",
+      "export_sha256": "6b6d16d02f75c93d44789415e644bd7cfa8715d2d51a81ccf1211b49d0a22a98",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/model-turn-tool-continuation.ts",
+      "canonical_sha256": "301d82ee9e4c1f7a164647615c0b7bcf4d09a470b73f437db1c1808b52d77a5d",
+      "export_sha256": "301d82ee9e4c1f7a164647615c0b7bcf4d09a470b73f437db1c1808b52d77a5d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/nhm2-block-grounding.ts",
+      "canonical_sha256": "0d8064c3b9d4930ab402ac03d48f235229182cf33269f0fccec30181f2e553dd",
+      "export_sha256": "0bb026dd101ea155bcdd446186997b5a8a05785c56e871dd87f6c460a515764d",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/operational-constraints.ts",
+      "canonical_sha256": "63960cde097ae8d0527c09894c054f5b7fb0ff92ef19561a5027c7e894e97f79",
+      "export_sha256": "63960cde097ae8d0527c09894c054f5b7fb0ff92ef19561a5027c7e894e97f79",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/route-authority-audit.ts",
+      "canonical_sha256": "5cb4d24871e48a357bf035c337171ed71dde78618b8c387f220857157451f7a7",
+      "export_sha256": "8601652c8c33e6186c02b38aa7bdcf990a5ebf4b85f653a41cc9e2b6298998f2",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/route-product-contract.ts",
+      "canonical_sha256": "9edfb429a8d82622770a399de67f06a24dc85d7cea800ceff096721422fc635e",
+      "export_sha256": "9edfb429a8d82622770a399de67f06a24dc85d7cea800ceff096721422fc635e",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/runtime-authority-contract.ts",
+      "canonical_sha256": "1141f110153156577a3487da21bffccec7f59efc8be45574cc6fc677b98b2849",
+      "export_sha256": "1141f110153156577a3487da21bffccec7f59efc8be45574cc6fc677b98b2849",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/runtime/external-capability-policy.ts",
+      "canonical_sha256": "8943522c8b1b8376435b629b6b3e53099a809b0f0fb971d5acd132e50ef272b9",
+      "export_sha256": "8943522c8b1b8376435b629b6b3e53099a809b0f0fb971d5acd132e50ef272b9",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/runtime/solver-payload-refresh.ts",
+      "canonical_sha256": "573cf26e7f9d502ad28df136facc46b0489ff20a453d139066b163a597313bcb",
+      "export_sha256": "573cf26e7f9d502ad28df136facc46b0489ff20a453d139066b163a597313bcb",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/runtime/turn-lifecycle-differential-audit.ts",
+      "canonical_sha256": "76429486dbc3ee5965ec8ff6c9464c01bcb606351a924d74b23f819207ea8b1b",
+      "export_sha256": "76429486dbc3ee5965ec8ff6c9464c01bcb606351a924d74b23f819207ea8b1b",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/runtime/typed-failure-lifecycle-reconciliation.ts",
+      "canonical_sha256": "91c81ee50e7017a4be15b38656ed6c19338fd63559f354d5721568a87426594d",
+      "export_sha256": "91c81ee50e7017a4be15b38656ed6c19338fd63559f354d5721568a87426594d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/shared-room-ask-session.ts",
+      "canonical_sha256": "c35e9b19ee8d2faefe17587d5914ba79ba61d84c85afaf3d16148095d9c82ce0",
+      "export_sha256": "c35e9b19ee8d2faefe17587d5914ba79ba61d84c85afaf3d16148095d9c82ce0",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/solver-continuation.ts",
+      "canonical_sha256": "65a5d346796bbd8f13498898a4fd1836b06a621591fb27d2cb8bdc009ccb50c8",
+      "export_sha256": "5d27c4a5cc1a73524c364e0541dbd132b66d3423198adb7866a4bc8b104c758c",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/solver-controller-decision.ts",
+      "canonical_sha256": "327082b57f5d4c0e155223a4091b44e8d9dcb984fb91cce4687c284625800dc9",
+      "export_sha256": "327082b57f5d4c0e155223a4091b44e8d9dcb984fb91cce4687c284625800dc9",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/terminal-answer-envelope.ts",
+      "canonical_sha256": "78199ab1f30bbe65ec4f9aa28f79495be86aa2fa08c5ea756fc48bcb31415e43",
+      "export_sha256": "78199ab1f30bbe65ec4f9aa28f79495be86aa2fa08c5ea756fc48bcb31415e43",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/terminal-authority-enforcer.ts",
+      "canonical_sha256": "f5c7d6a7fa73b0cc1aaf9f6172c709fac516d1634d9d5eb33817a26247974e09",
+      "export_sha256": "f5c7d6a7fa73b0cc1aaf9f6172c709fac516d1634d9d5eb33817a26247974e09",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/terminal-equivalence-harness.ts",
+      "canonical_sha256": "7faf94902996a02cbbc2b93e52d35c1e1ec1f7dac2d196461e71ade4e38b0628",
+      "export_sha256": "4c7d54349c4065e4870267bfc2dcec2ef7a669e37e75ea82bd4616d1c762b9e8",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/theory-context-reflection-tool.ts",
+      "canonical_sha256": "8558d217eb3fa8ab82ef6453c87c4ee5576fa25cd73142bcacd03be0a0d5467c",
+      "export_sha256": "8558d217eb3fa8ab82ef6453c87c4ee5576fa25cd73142bcacd03be0a0d5467c",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/theory-experiment-procedure-intent.ts",
+      "canonical_sha256": "9561e129ed72c492dcfe44517b63ae4ab4c82001d5aa870f60d42751aa252dc3",
+      "export_sha256": "9561e129ed72c492dcfe44517b63ae4ab4c82001d5aa870f60d42751aa252dc3",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/theory-frontier-vector-field-tool.ts",
+      "canonical_sha256": "f65e6ce0f7580c66a9f470f4030b267c59082017e29a7b19b837b25238c324c9",
+      "export_sha256": "f65e6ce0f7580c66a9f470f4030b267c59082017e29a7b19b837b25238c324c9",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/tool-call-admission.ts",
+      "canonical_sha256": "a9a5537a4b4afefbded72c2feafae1bcbae7915dbb328dbf06125534091b41f5",
+      "export_sha256": "a9a5537a4b4afefbded72c2feafae1bcbae7915dbb328dbf06125534091b41f5",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/helix-ask/tool-lifecycle-trace.ts",
+      "canonical_sha256": "07366aa4ba3169fc23143346a6edc21bf9176e6b0d2d8cfb8c37f8ac6dcf48e1",
+      "export_sha256": "07366aa4ba3169fc23143346a6edc21bf9176e6b0d2d8cfb8c37f8ac6dcf48e1",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/i18n/interface-translation-jobs.ts",
+      "canonical_sha256": "1e8627caac0bd186648ca630834df7e3759c94c113af7423f00ef69a5e2dab89",
+      "export_sha256": "1e8627caac0bd186648ca630834df7e3759c94c113af7423f00ef69a5e2dab89",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/ideology/guidance.ts",
+      "canonical_sha256": "40c5d7b1ceb47f4b2dfb545a5c7caa0398d6b7fba5cfd5642dda0ca2420a1ee3",
+      "export_sha256": "d8cf3dd051c3c1f30002975778d4ddbb3c2b834b259e608f314f35d9a4a78b63",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/observability/gr-agent-loop-store.ts",
+      "canonical_sha256": "04f9e629fd7aef0bfba40a1afc82bd808829a249c5d09c4a08ef7a87c192e94e",
+      "export_sha256": "04f9e629fd7aef0bfba40a1afc82bd808829a249c5d09c4a08ef7a87c192e94e",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/physics/tokamak-sim.ts",
+      "canonical_sha256": "de4a218546ee35e934488e21712e7570a3b3709f982b213899c6d8efe0ddb2a1",
+      "export_sha256": "de4a218546ee35e934488e21712e7570a3b3709f982b213899c6d8efe0ddb2a1",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/planner/chat-b.ts",
+      "canonical_sha256": "8e1b7ad26c01aa5154a3b63ffcfe4fbe7f7f358785e30f1f7e3b17802b0b9cad",
+      "export_sha256": "3efa52e93f1c459aea07386f537985e8aeebe2c6af558300d14488c0a5bab985",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/planner/why-belongs.ts",
+      "canonical_sha256": "3a1ecfe0dbaeaec7bd70f63641931c5562ca8fe417dd73a29363674bda89981c",
+      "export_sha256": "18762adf664229c9b102a62543f5c63643eeaee08f507aeef95fae245c6b0171",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/public-context/catalog.ts",
+      "canonical_sha256": "038cb49568c4bd474673f8cd8f784e2a78957c9531d2ef4eba87084a6c7fda37",
+      "export_sha256": "038cb49568c4bd474673f8cd8f784e2a78957c9531d2ef4eba87084a6c7fda37",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/public-context/principle-hypotheses.ts",
+      "canonical_sha256": "aa1cb5aa9dcc90418cf728011c78529fd25eaf2c11f5718ac5584510a32ce049",
+      "export_sha256": "86ba55425b937163aaa371f8493ae74b0f76c873dae53f27983ed7a97337ac25",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/public-context/reflections.ts",
+      "canonical_sha256": "d95e97f1cadd41c898632d187c8219ba249bd935f727e63173f287f2388e1b50",
+      "export_sha256": "2ea6b88bec44413f9bb4f5cc533bd02b0d3594f33f6f0abe1bb3e6b329118348",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/public-context/relation-paths.ts",
+      "canonical_sha256": "0bd0f46e01bf4df2f53bec0889817b673ae1208993bbedcf70a27bd62301c0d1",
+      "export_sha256": "0bd0f46e01bf4df2f53bec0889817b673ae1208993bbedcf70a27bd62301c0d1",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/scuffem.ts",
+      "canonical_sha256": "fe1270327e7bae0dd64084a34fe05f5fb0f09ca6996668472c4d20deb95f701e",
+      "export_sha256": "a0f277b8005bed8d80e48e6394c8ac7c63f9f9e995028623a6cc3dd55a88c44a",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/solar-research/package-storage-codec.ts",
+      "canonical_sha256": "85c2b55922a122ea898a8c55eb1fe4c491d097b6df8877009feac74bc35b747c",
+      "export_sha256": "85c2b55922a122ea898a8c55eb1fe4c491d097b6df8877009feac74bc35b747c",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/solar-research/profile-package-reader.ts",
+      "canonical_sha256": "39179bcae1c81ffa9a8c06249288eb11fa7424147fc5a7a1799c8d6fde0e559a",
+      "export_sha256": "39179bcae1c81ffa9a8c06249288eb11fa7424147fc5a7a1799c8d6fde0e559a",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/solar-research/profile-package-retention.ts",
+      "canonical_sha256": "a9317157da9ca7d440a402e2d0353002ad2ab02962fd179fda1558d9a2e37d59",
+      "export_sha256": "a9317157da9ca7d440a402e2d0353002ad2ab02962fd179fda1558d9a2e37d59",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/target-validation.ts",
+      "canonical_sha256": "1f060ced93f006d5742bfc8e03427b25ac58cc0decd86b23a5ef31bea3a02254",
+      "export_sha256": "c8e94fbb5232bd135d82e3ec791a197275a4b42bbb2153dc67e727c2fdf42508",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/artifact-backed-compound-run.ts",
+      "canonical_sha256": "3287ae0d19aa28431610bf01a56623202ee09237a3375f91456cfa19ce2b814c",
+      "export_sha256": "3287ae0d19aa28431610bf01a56623202ee09237a3375f91456cfa19ce2b814c",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-formal-artifact-family-audit-catalog.ts",
+      "canonical_sha256": "15635f899e112e3c48eb18cdd4cadb8090880fc1899ec498a020aad9da57aae7",
+      "export_sha256": "4a4f20bb4c4356e17d03b52a65799b4133253b6c81024a54fb0bc621d2db35c8",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-formal-execution-registry-bootstrap.v2.ts",
+      "canonical_sha256": "3fd3eaa1d1da62ee1f4e341a3473914d1f50322cb3510c001087d688cefc6df8",
+      "export_sha256": "3fd3eaa1d1da62ee1f4e341a3473914d1f50322cb3510c001087d688cefc6df8",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-formal-runtime-canary-service.ts",
+      "canonical_sha256": "b668a114ed687738df80527d94a7b5aef21cfe4de0f9d9e6349f52b7b61f0edb",
+      "export_sha256": "290efdd12b06f013cb9616ea89bbdba762824839a3e841a820576fc0b9ae219e",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verification-execution-catalog.v2.ts",
+      "canonical_sha256": "4354b5bad6641125a47ebb6bce6e5cfc8e3de9e7a99a306283afcb06bb65887a",
+      "export_sha256": "4354b5bad6641125a47ebb6bce6e5cfc8e3de9e7a99a306283afcb06bb65887a",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verification-preparer.ts",
+      "canonical_sha256": "afd1dd3983399e5461f7934ccfa24f23afda8b4594f44e7b4824f267f236c4cf",
+      "export_sha256": "afd1dd3983399e5461f7934ccfa24f23afda8b4594f44e7b4824f267f236c4cf",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verifier-job-service.ts",
+      "canonical_sha256": "6c008a68fa41f5c93ccfac8f6e6128ca56d54c0d25d9ee4204a019629de8a49a",
+      "export_sha256": "6c008a68fa41f5c93ccfac8f6e6128ca56d54c0d25d9ee4204a019629de8a49a",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-formal-verifier-job-service.v2.ts",
+      "canonical_sha256": "bb6052dc2553227d5a946032b7c673a6b9326a14eb12a37292a5e14a973196f4",
+      "export_sha256": "bb6052dc2553227d5a946032b7c673a6b9326a14eb12a37292a5e14a973196f4",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-independent-numerical-execution-catalog.ts",
+      "canonical_sha256": "b9d424efb49a5fa601b292d66e2c359af9ea59d83554180c7b6ef34c8e33ee58",
+      "export_sha256": "b9d424efb49a5fa601b292d66e2c359af9ea59d83554180c7b6ef34c8e33ee58",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-independent-numerical-verifier-job-service.ts",
+      "canonical_sha256": "ee726d81483c337f7049f667fd3e0037c3d76e5e994bf665f12048da5deed340",
+      "export_sha256": "f4b90a38465a309ea46003c330eeebae843622a1b8ddcaf5bd8124fc97cb508e",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_ADDENDUM_CONSOLIDATED_R384_CANDIDATE.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-lanyon-advection-diffusion-adapter.ts",
+      "canonical_sha256": "e6c5aec0c093589b8bc3b1a38ce9ee203f4babe6bf809ec09b4cbd11532c924f",
+      "export_sha256": "e6c5aec0c093589b8bc3b1a38ce9ee203f4babe6bf809ec09b4cbd11532c924f",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-lanyon-numerical-execution-enrollment-catalog.ts",
+      "canonical_sha256": "d8abb6767bb0bf3c2dddc6111fab1ccf487c0c9ffdb548211ce1e65d63b7e0f1",
+      "export_sha256": "d8abb6767bb0bf3c2dddc6111fab1ccf487c0c9ffdb548211ce1e65d63b7e0f1",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-spec-benchmark-promotion-service.ts",
+      "canonical_sha256": "cf0d6498dd95b99dd0bb71a82ce69a80ad0d774d45b3dd3508d9cea420242b86",
+      "export_sha256": "cf0d6498dd95b99dd0bb71a82ce69a80ad0d774d45b3dd3508d9cea420242b86",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-spec-semantic-snapshot-store.ts",
+      "canonical_sha256": "d90f58deb91a0f1d54953239c62bac4a8d4f055792ae2661c626e79dec089378",
+      "export_sha256": "d90f58deb91a0f1d54953239c62bac4a8d4f055792ae2661c626e79dec089378",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/casimir-theory-execution-server-composition.ts",
+      "canonical_sha256": "a2a445e8d0f922ef5959900c8ef4e7ac678e09b0cb9c9be7ac7d3416133cf5f9",
+      "export_sha256": "a2a445e8d0f922ef5959900c8ef4e7ac678e09b0cb9c9be7ac7d3416133cf5f9",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-conformally-flat-needle-connected-noise-full-array-diagnostic.ts",
+      "canonical_sha256": "7cab79095a042f8beb6ab1bc885fb9e33695871caed48754530a5a14d3fbe7d9",
+      "export_sha256": "7cab79095a042f8beb6ab1bc885fb9e33695871caed48754530a5a14d3fbe7d9",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-experiment-ready-theory-closure-evaluator.ts",
+      "canonical_sha256": "099b30a9ca0627f733643e232c5ab39258169a1131b3c4a2773e111d4bfe1819",
+      "export_sha256": "099b30a9ca0627f733643e232c5ab39258169a1131b3c4a2773e111d4bfe1819",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-approved-toolchain-policy-verifier.ts",
+      "canonical_sha256": "756d927d8d29c83783cc81b7710d2e5ad3e62eb801d05932b2ff6fc0a41deb91",
+      "export_sha256": "756d927d8d29c83783cc81b7710d2e5ad3e62eb801d05932b2ff6fc0a41deb91",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-outer-observation-evidence-adapter.ts",
+      "canonical_sha256": "8e3bff9eaea29ccb56f72f520377feef26f2bbdbb2d182069741cf227a4bd94c",
+      "export_sha256": "8e3bff9eaea29ccb56f72f520377feef26f2bbdbb2d182069741cf227a4bd94c",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-runtime-executor.ts",
+      "canonical_sha256": "dedce4110b17b9e9fe8c2c2547edecf63a88a2190cd40cc867834ed1d4d4664a",
+      "export_sha256": "dedce4110b17b9e9fe8c2c2547edecf63a88a2190cd40cc867834ed1d4d4664a",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-formal-runtime-plan-admission.ts",
+      "canonical_sha256": "6060db3c65f85e0960c1164cfe0318fcac52aa6e125aaf13d1d757b331ce04fd",
+      "export_sha256": "6060db3c65f85e0960c1164cfe0318fcac52aa6e125aaf13d1d757b331ce04fd",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-semiclassical-v2-metric-demand-producer.ts",
+      "canonical_sha256": "c18e709d2cb08a2a5007088053afc0a1d6f1d61e06c1bdb19a1042f049d7890d",
+      "export_sha256": "c18e709d2cb08a2a5007088053afc0a1d6f1d61e06c1bdb19a1042f049d7890d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/nhm2-theory-component-mcp.ts",
+      "canonical_sha256": "d04db7b617a93d5b8bfc31a90624f50ee476715e8c7c8e99c05e56bdf780f61a",
+      "export_sha256": "d04db7b617a93d5b8bfc31a90624f50ee476715e8c7c8e99c05e56bdf780f61a",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/runtime-adapters/gr-nhm2-runtime-adapter.ts",
+      "canonical_sha256": "11df79a3ba73564fc6611db4559dcad98b7f28dbedc2a48e4cdb97e3920ca60f",
+      "export_sha256": "11df79a3ba73564fc6611db4559dcad98b7f28dbedc2a48e4cdb97e3920ca60f",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/runtime-tool-confirmation-postgres-replay-ledger.ts",
+      "canonical_sha256": "1c815d826a5c1458a64ff5c04fdf7ade7782c7a39d3cf1cbbdf89811eb926e33",
+      "export_sha256": "1c815d826a5c1458a64ff5c04fdf7ade7782c7a39d3cf1cbbdf89811eb926e33",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/runtime-tool-confirmation-public-key-verifier.ts",
+      "canonical_sha256": "d069da1ea769f01f48397dc2b6f533bf8beb8c4c2c30df0ccff669a2b62b7a50",
+      "export_sha256": "d069da1ea769f01f48397dc2b6f533bf8beb8c4c2c30df0ccff669a2b62b7a50",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/runtime-tool-confirmation-receipt-verifier.ts",
+      "canonical_sha256": "695356d89de8b87151f619b8fb0a67386c5c57b85425afc5d6117a4386dca535",
+      "export_sha256": "695356d89de8b87151f619b8fb0a67386c5c57b85425afc5d6117a4386dca535",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/services/theory/ytterbium-clock-proposal-mcp.ts",
+      "canonical_sha256": "57e91d94e0b729ab5a7813ec6bfc9e761a094d4dab0e137476d94eb4c4cb49b8",
+      "export_sha256": "57e91d94e0b729ab5a7813ec6bfc9e761a094d4dab0e137476d94eb4c4cb49b8",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/skills/debate.run.ts",
+      "canonical_sha256": "6ebb870e1e0b3608dee5043b70383f599f72858ee4d44b388a493522d1b8432d",
+      "export_sha256": "6ebb870e1e0b3608dee5043b70383f599f72858ee4d44b388a493522d1b8432d",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/skills/helix-ask.civilization-bounds-roadmap.ts",
+      "canonical_sha256": "661cab1ee16a57df903c839267eb11e0a099217ad610ae6553890ad73f78320c",
+      "export_sha256": "661cab1ee16a57df903c839267eb11e0a099217ad610ae6553890ad73f78320c",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/skills/physics.gr.assistant.ts",
+      "canonical_sha256": "9843871c225a55615a51a29022d5faa960431e1c5ef2fef12506f11a2a1ef7cf",
+      "export_sha256": "9843871c225a55615a51a29022d5faa960431e1c5ef2fef12506f11a2a1ef7cf",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/skills/physics.gr.grounding.ts",
+      "canonical_sha256": "b1c9eb98c4480c3dcaef66d725135c5f422a08496f13e17974571f578b51303b",
+      "export_sha256": "b1c9eb98c4480c3dcaef66d725135c5f422a08496f13e17974571f578b51303b",
+      "status": "identity",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/skills/physics.warp.viability.ts",
+      "canonical_sha256": "f7831405d56ba9c67c669658084f1cfc7071a0ab743e848477bfac166c4e34d6",
+      "export_sha256": "b8c03b589599b32a22397e80f997ae6a98d3049f03b3587eabe0c0bf9551e78e",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    },
+    {
+      "path": "server/stress-energy-brick.ts",
+      "canonical_sha256": "cecf62965fac660a1128669bb0981470e48e1336dcb892484393f0ffd6b98b95",
+      "export_sha256": "9d1453a5b5e8f891c1703b532c0d7159c66941bbc2d9af3be0a3206b8bc2da04",
+      "status": "line_endings_only",
+      "review_inventories": [
+        "SOURCE_SELECTION.json"
+      ]
+    }
+  ],
+  "exceptions": [],
+  "limits": [
+    "Selected first-party source preview only; not a standalone CasimirBot build or complete dependency closure.",
+    "Existing synthetic fixture transformations, dependency disclosures and rights notices remain applicable.",
+    "Held older files are explicit exceptions to the commit pin.",
+    "Historical candidate notes retain their original dates; this inventory supplies the final source identity.",
+    "Source publication does not establish signed-installer, deployed website, scientific certification or live-game acceptance."
+  ]
+}

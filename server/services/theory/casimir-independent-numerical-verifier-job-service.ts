@@ -1082,5 +1082,5 @@ export const startCasimirIndependentNumericalVerifierJobV1 = (
 export const readCasimirIndependentNumericalVerifierJobResultV1 = (
   input: Parameters<typeof defaultService.readResult>[0],
 ) => defaultService.readResult(input);
-export const resetCasimirIndependentNumericalVerifierJobsForTests = (): void =>
+export const resetCasimirIndependentNumericalVerifierJobsForTests = (): Promise<void> =>
   defaultService.reset();

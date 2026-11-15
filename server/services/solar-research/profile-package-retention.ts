@@ -2,7 +2,8 @@ import {readProfileStorageSnapshot,writeProfileStorageSnapshot} from '../helix-a
 import {prepareSolarPackageStorage,SOLAR_PACKAGE_ENTRY_BYTES,SOLAR_PACKAGE_STORAGE_PREFIX,type SolarPackageOwner} from './package-storage-codec';
 
 /** Internal only: caller authenticates owner and policy quota. No public/MCP write. */
-export async function retainSolarProfilePackage(owner:SolarPackageOwner,packageJson:string,quotaBytes:number) {
+export async function retainSolarProfilePackage(owner:SolarPackageOwner,packageJson:string,quotaBytes:number,
+  authorizeBeforeWrite?:()=>Promise<void>) {
   const boundOwner={...owner};
   if(!Number.isSafeInteger(quotaBytes)||quotaBytes<0)throw new Error('SOLAR_PACKAGE_QUOTA_INVALID');
   const prepared=await prepareSolarPackageStorage(boundOwner,packageJson);
@@ -23,6 +24,7 @@ export async function retainSolarProfilePackage(owner:SolarPackageOwner,packageJ
   const merged=[...current.entries,...entries];
   if(merged.some(e=>Buffer.byteLength(e.value)>SOLAR_PACKAGE_ENTRY_BYTES))throw new Error('SOLAR_PACKAGE_STORAGE_SIZE_LIMIT');
   if(merged.reduce((sum,e)=>sum+Buffer.byteLength(e.value),0)>quotaBytes)throw new Error('SOLAR_PACKAGE_QUOTA_EXCEEDED');
+  await authorizeBeforeWrite?.();
   const receipt=await writeProfileStorageSnapshot({profile_id:boundOwner.accountProfileId,quota_bytes:quotaBytes,
     expected_storage_revision:current.storage_revision??null,snapshot:{entries:merged,
       artifacts:[...current.artifacts,...entries.map(e=>({schema:'helix.workspace_memory_registry.v1' as const,

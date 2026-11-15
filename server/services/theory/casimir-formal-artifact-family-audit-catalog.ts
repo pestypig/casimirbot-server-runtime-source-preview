@@ -163,7 +163,7 @@ export async function queryCasimirFormalArtifactFamilyAuditCatalogV1(input: {
   const theoremName = input.theoremName?.trim() || null;
   if (issues.length > 0) {
     return {
-      ok: false,
+      ok: false as const,
       status: "blocked" as const,
       issues: ["formal_artifact_family_audit_catalog_invalid", ...issues],
       auditArtifactSha256: null,

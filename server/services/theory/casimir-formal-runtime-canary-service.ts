@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import type { CasimirFormalVerificationStatusV1 } from "../../../shared/contracts/casimir-formal-verification-certificate.v1";
 
 import type { HelixAccountType } from "../../../shared/helix-account-session";
 import { buildCasimirFormalVerificationRequestV1 } from "../../../shared/contracts/casimir-formal-verification-request.v1";
@@ -124,7 +125,7 @@ export type CasimirFormalRuntimeCanaryResultV1 = {
   issues: string[];
   runtimeReplayReport: {
     schema: typeof CASIMIR_FORMAL_RUNTIME_CANARY_REPLAY_REPORT_SCHEMA;
-    status: "passed" | "failed" | "blocked";
+    status: CasimirFormalVerificationStatusV1;
     certificateArtifactSha256: string;
     aggregateTranscriptSha256: string;
     requiredReplayCount: number;

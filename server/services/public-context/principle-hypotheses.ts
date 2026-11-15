@@ -31,11 +31,18 @@ const exploratoryTerms = (text: string): Set<string> =>
   new Set([...terms(text)].filter((word) => !EXPLORATORY_STOP.has(word)));
 const overlap = (left: Set<string>, right: Set<string>): number =>
   [...left].filter((word) => right.has(word)).length;
+const publicFieldMatches = (query: Set<string>, field: Set<string>): Set<string> => new Set(
+  [...field].filter((concept) => [...query].some((word) => word === concept ||
+    word.length >= 6 && concept.length >= 6 && word.slice(0, 5) === concept.slice(0, 5))),
+);
 const identity = (text: string): string => text.toLowerCase().replace(/[^a-z0-9]+/g, "");
 export const currentPublicQuestion = (activeQuestion: string): string =>
   /\b(?:my|our|the)\s+(?:actual|real|current)\s+question\s+is\b[:\s]*(.*)/i.exec(activeQuestion)?.[1] || activeQuestion;
 export const scopedTheoryProjectFits = (id: string, activeQuestion: string): boolean => {
   if (id.startsWith("solar.")) return /\b(?:solar|sun|sunspot|heliophysic(?:s|al)?)\b/i.test(activeQuestion);
+  // A prepared hydrogen model is not a generic emission-line mechanism for
+  // another element. Host hints cannot supply the missing target species.
+  if (id.startsWith("physics.atomic.hydrogen_")) return /\b(?:hydrogen|protium|H-1|1H)\b/i.test(activeQuestion);
   const scope = /^(?:study\.([^.]+)|lab\.([^.]+)|nhm2)\./.exec(id);
   if (!scope) return true;
   const projectName = scope[1] ?? scope[2] ?? "nhm2";
@@ -159,6 +166,10 @@ export function findPublicPrincipleHypotheses(
 ): string[] {
   if (!candidatePrinciples.length || !activeQuestion.trim()) return [];
   const questionTerms = terms(activeQuestion);
+  // A quoted badge name may be task data. It cannot be the only support for
+  // a host hypothesis about a different active request.
+  const activeGroundingTerms = terms(activeQuestion.replace(
+    /"[^"\n]*"|“[^”\n]*”|(?<![\p{L}\p{N}])'[^'\n]*'|‘[^’\n]*’/gu, " "));
   if (!questionTerms.size) return [];
   const documentFrequency = new Map<string, number>();
   if (options.allowRareTitleAnchor) {
@@ -182,6 +193,15 @@ export function findPublicPrincipleHypotheses(
       const summary = terms(badge.summary);
       const metadata = terms(searchText.get(badge.id) ?? "");
       const badgeTerms = new Set([...title, ...summary, ...metadata]);
+      // IDs and search metadata locate possible concepts, but cannot supply
+      // the active question's public subject/mechanism bridge by themselves.
+      const publicTitle = terms(badge.title);
+      const publicTerms = new Set([...publicTitle, ...summary]);
+      const questionPublic = publicFieldMatches(activeGroundingTerms, publicTerms);
+      const hintPublic = publicFieldMatches(hint, publicTerms);
+      const hintTitle = publicFieldMatches(hint, publicTitle);
+      const publicBridge = new Set([...questionPublic, ...hintPublic]);
+      const sharedPublic = [...questionPublic].some((concept) => hintPublic.has(concept));
       const hintCoverage = overlap(hint, badgeTerms);
       const questionCoverage = overlap(questionTerms, badgeTerms);
       const questionTitleCoverage = overlap(questionTerms, title);
@@ -206,6 +226,14 @@ export function findPublicPrincipleHypotheses(
       // A question-only match must not turn an unrelated host hint into a
       // catalog card. Every non-exact proposal needs support from both the
       // active question and the proposed principle.
+      // A public title plus two public concepts is the direct route. A shared
+      // public term can also locate an unnamed mechanism when another public
+      // concept separates it from a one-word near neighbor. Five-letter roots cover ordinary public
+      // wording variants such as "spectra" and "spectral".
+      if (exactIdentity ? !questionPublic.size :
+        !questionPublic.size || !hintPublic.size ||
+        !(hintTitle.size && publicBridge.size >= 2) &&
+        !(sharedPublic && publicBridge.size >= 2)) continue;
       if (!exactIdentity && !hintLocated && !questionLocated && !rareTitleAnchor) continue;
       if (exactIdentity && questionCoverage < 1) continue;
       candidates.push({ id: badge.id, questionSupport: new Set([...questionTerms].filter((word) => badgeTerms.has(word))),
@@ -259,22 +287,43 @@ export function findPublicExploratoryCandidates(
     const metadata = exploratoryTerms(searchText.get(badge.id) ?? "");
     const all = new Set([...title, ...summary, ...metadata]);
     for (const word of all) documentFrequency.set(word, (documentFrequency.get(word) ?? 0) + 1);
-    return { badge, title, summary, all };
+    const publicTerms = new Set([...title, ...summary]);
+    return { badge, title, summary, metadata, publicTerms, all };
   });
   const rareLimit = Math.max(2, Math.floor(badges.length * 0.05));
   const ranked = new Map<string, number>();
   for (const hint of candidatePrinciples.slice(0, 3)) {
     if (hint.length > 100) continue;
-    for (const word of exploratoryTerms(hint)) {
-      if ((documentFrequency.get(word) ?? badges.length) > rareLimit) continue;
-      const candidates = indexed.flatMap(({ badge, title, summary, all }) => {
-        if (excludedIds.has(badge.id) || (!title.has(word) && !summary.has(word)) ||
-          overlap(allHints, all) < 2) return [];
-        if (!relationalTitleTargetFits(badge.title, activeQuestion, allHints)) return [];
+    const hintTerms = exploratoryTerms(hint);
+    for (const word of hintTerms) {
+      const candidates = indexed.flatMap(({ badge, title, summary, metadata, publicTerms, all }) => {
+        if (excludedIds.has(badge.id) || (!title.has(word) && !summary.has(word))) return [];
+        // A common public word can still seed a weak lead when the active
+        // question and the same host hint share another distinctive phrase,
+        // and the hint supplies a separate indexed mechanism term. This is
+        // candidate-only retrieval; metadata never becomes a source claim.
+        const shared = [...question].filter((term) => hintTerms.has(term));
+        const groundedCommonWord = shared.some((term) => publicTerms.has(term)) &&
+          shared.some((term) => term.length >= 6 && !publicTerms.has(term)) &&
+          [...hintTerms].some((term) => term.length >= 7 && metadata.has(term) && !publicTerms.has(term));
+        if ((documentFrequency.get(word) ?? badges.length) > rareLimit && !groundedCommonWord) return [];
+        const direct = overlap(hintTerms, all) >= 2 &&
+          (overlap(question, title) >= 1 || overlap(question, summary) >= 2);
+        // Related short hints may jointly describe one public concept when
+        // the question itself repeats at least one of those public terms.
+        const jointPublic = overlap(allHints, publicTerms) >= 2 &&
+          [...allHints].some((term) => question.has(term) && publicTerms.has(term));
+        // A separate observation hint can bridge an unnamed public mechanism
+        // only when the same reviewed metadata connects that mechanism term
+        // and an active-question term. This remains an unverified lead.
+        const bridged = overlap(allHints, all) >= 2 &&
+          overlap(hintTerms, publicTerms) >= 1 &&
+          overlap(hintTerms, metadata) >= 1 && overlap(question, metadata) >= 1;
+        if (!direct && !jointPublic && !bridged) return [];
+        if (!relationalTitleTargetFits(badge.title, activeQuestion, direct ? hintTerms : allHints)) return [];
         if (!scopedTheoryProjectFits(badge.id, activeQuestion)) return [];
-        const questionCoverage = overlap(question, all);
-        if (!questionCoverage) return [];
-        return [{ id: badge.id, score: (title.has(word) ? 12 : 0) +
+        const questionCoverage = direct || jointPublic ? overlap(question, publicTerms) : overlap(question, metadata);
+        return [{ id: badge.id, score: (groundedCommonWord ? 15 : 0) + (title.has(word) ? 12 : 0) +
           (summary.has(word) ? 8 : 0) + Math.min(questionCoverage, 3) * 2 +
           overlap(question, title) * 3 + overlap(question, summary) * 2 }];
       });
